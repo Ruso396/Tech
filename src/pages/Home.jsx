@@ -13,12 +13,9 @@ import { servicePreview } from "../data/content";
 
 /* ---------- Rich hero with layered backgrounds, glow, and a large product shot ---------- */
 const Hero = () => (
-  <section className="relative flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white">
-    {/* Decorative background blob (dark:hidden like the reference site) */}
-    <div className="absolute -top-40 -right-40 sm:-top-100 sm:-right-70 w-[26rem] h-[26rem] rounded-full bg-[#5044E5]/25 blur-3xl dark:hidden pointer-events-none" />
-
-    {/* Soft blue/purple radial glow spreading from the center/right (reference treatment) */}
-    <div className="absolute top-1/2 right-[-25%] w-[130%] h-[80%] -translate-y-1/2 bg-[radial-gradient(ellipse_at_center,rgba(80,68,229,0.15)_0%,rgba(77,140,234,0.10)_45%,transparent_72%)] dark:hidden pointer-events-none" />
+  <section className="relative flex flex-col items-center gap-6 pt-12 sm:pt-20 pb-10 sm:pb-16 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white">
+    {/* Subtle reference-style glow: small top-right blob only (dark:hidden like the reference site) */}
+    <div className="absolute -top-40 -right-40 sm:-top-100 sm:-right-70 w-[26rem] h-[26rem] rounded-full bg-[#5044E5]/20 blur-3xl dark:hidden pointer-events-none" />
 
     <div className="relative z-10 flex flex-col items-center gap-6">
       <motion.span
@@ -98,7 +95,7 @@ const Hero = () => (
 
 /* ---------- Meet the Founder ---------- */
 const FounderSection = () => (
-  <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 pb-16 sm:pb-24 text-gray-700 dark:text-white">
+  <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 pt-8 sm:pt-12 pb-12 sm:pb-16 text-gray-700 dark:text-white">
     <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#147AFF]/10 blur-3xl" />
     <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#5044E5]/10 blur-3xl" />
 
@@ -166,7 +163,7 @@ const FounderSection = () => (
 
 /* ---------- Head of Marketing ---------- */
 const HeadOfMarketingSection = () => (
-  <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 pb-16 sm:pb-24 text-gray-700 dark:text-white">
+  <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 pt-8 sm:pt-12 pb-12 sm:pb-16 text-gray-700 dark:text-white">
     <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#5044E5]/10 blur-3xl" />
     <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#147AFF]/10 blur-3xl" />
 
@@ -245,7 +242,7 @@ const Home = () => {
       <TechLogoStrip />
 
       {/* Trust / Intro */}
-      <section className="px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 pb-16 sm:pb-24">
+      <section className="px-4 sm:px-12 lg:px-24 xl:px-40 pt-8 sm:pt-14 pb-12 sm:pb-16">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6 text-center">
           <SectionHeading
             eyebrow="Why RusoBros Tech"
@@ -269,7 +266,7 @@ const Home = () => {
       <HeadOfMarketingSection />
 
       {/* Services Preview */}
-      <section className="relative px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 pb-16 sm:pb-24 text-gray-700 dark:text-white">
+      <section className="relative px-4 sm:px-12 lg:px-24 xl:px-40 pt-8 sm:pt-14 pb-12 sm:pb-16 text-gray-700 dark:text-white">
         <div className="absolute inset-0 bg-grid opacity-60 dark:opacity-30 pointer-events-none" />
         <div className="relative z-10">
           <SectionHeading
@@ -295,11 +292,11 @@ const Home = () => {
       </section>
 
       {/* Featured Product */}
-<section className="relative w-full overflow-hidden px-4 pt-30 pb-14 sm:px-8 sm:pb-20 lg:px-12 lg:pb-24 xl:px-20 2xl:px-28">
+<section className="relative w-full overflow-hidden px-4 pt-8 pb-8 sm:px-8 sm:pb-12 lg:px-12 lg:pb-16 xl:px-20 2xl:px-28">
   {/* Background glow */}
   <div className="pointer-events-none absolute -top-24 -right-32 h-96 w-96 rounded-full bg-[#5044E5]/10 blur-3xl" />
 
-  <div className="relative mx-auto w-full max-w-[1400px]">
+  <div className="relative mx-auto w-full max-w-[1400px] -mt-20 sm:-mt-16">
     <SplitSection
       eyebrow="Featured Product"
       title={
@@ -339,58 +336,64 @@ const Home = () => {
   </div>
 </section>
       {/* Full-Stack visual split */}
-      <SplitSection
-        eyebrow="Full-Stack Development"
-        title="One Team for the Entire Product Lifecycle"
-        desc="We design, build, ship, and maintain complete products — frontend, backend, databases, integrations, and deployment working as one system. No handoffs, no gaps."
-        bullets={[
-          "Modern React & Next.js frontends",
-          "Secure Node.js & Laravel backends",
-          "Cloud deployment, CI/CD, and monitoring",
-          "Ongoing support after launch",
-        ]}
-        visual="architecture"
-        label="Full-Stack Architecture"
-        chips={[
-          { icon: "web", label: "Frontend", className: "-top-5 -left-3 sm:-left-6" },
-          { icon: "server", label: "Backend", className: "-top-5 -right-3 sm:-right-6" },
-          { icon: "cloud", label: "Deploy", className: "bottom-6 -left-4 sm:-left-8" },
-        ]}
-        ctaLabel="See What We Build"
-        ctaTo="/portfolio"
-      />
+      <div className="-mt-20 sm:-mt-16 text-gray-700 dark:text-white">
+        <SplitSection
+          eyebrow="Full-Stack Development"
+          title="One Team for the Entire Product Lifecycle"
+          desc="We design, build, ship, and maintain complete products — frontend, backend, databases, integrations, and deployment working as one system. No handoffs, no gaps."
+          bullets={[
+            "Modern React & Next.js frontends",
+            "Secure Node.js & Laravel backends",
+            "Cloud deployment, CI/CD, and monitoring",
+            "Ongoing support after launch",
+          ]}
+          visual="architecture"
+          label="Full-Stack Architecture"
+          chips={[
+            { icon: "web", label: "Frontend", className: "-top-5 -left-3 sm:-left-6" },
+            { icon: "server", label: "Backend", className: "-top-5 -right-3 sm:-right-6" },
+            { icon: "cloud", label: "Deploy", className: "bottom-6 -left-4 sm:-left-8" },
+          ]}
+          ctaLabel="See What We Build"
+          ctaTo="/portfolio"
+        />
+      </div>
 
       {/* Business software visual split (reversed) */}
-      <SplitSection
-        reverse
-        eyebrow="Business Software"
-        title="Software That Fits Your Workflows"
-        desc="When ready-made tools fall short, we design custom business software — CRM, inventory, billing, automation, and analytics — built around the way your business actually operates."
-        bullets={[
-          "Billing, invoices, and GST",
-          "Inventory and purchase management",
-          "Customer relations and automation",
-          "Dashboards and business reports",
-        ]}
-        visual="business"
-        label="Business Operations"
-        chips={[
-          { icon: "briefcase", label: "CRM", className: "-top-5 -right-3 sm:-right-6" },
-          { icon: "database", label: "Inventory", className: "bottom-8 -left-4 sm:-left-8" },
-        ]}
-        ctaLabel="Explore Products"
-        ctaTo="/products"
-      />
+      <div className="-mt-20 sm:-mt-16 text-gray-700 dark:text-white">
+        <SplitSection
+          reverse
+          eyebrow="Business Software"
+          title="Software That Fits Your Workflows"
+          desc="When ready-made tools fall short, we design custom business software — CRM, inventory, billing, automation, and analytics — built around the way your business actually operates."
+          bullets={[
+            "Billing, invoices, and GST",
+            "Inventory and purchase management",
+            "Customer relations and automation",
+            "Dashboards and business reports",
+          ]}
+          visual="business"
+          label="Business Operations"
+          chips={[
+            { icon: "briefcase", label: "CRM", className: "-top-5 -right-3 sm:-right-6" },
+            { icon: "database", label: "Inventory", className: "bottom-8 -left-4 sm:-left-8" },
+          ]}
+          ctaLabel="Explore Products"
+          ctaTo="/products"
+        />
+      </div>
 
-      <CTASection
-        eyebrow="Let's work together"
-        title="Let's turn your idea into a scalable digital product."
-        description="Tell us about your goals and get a clear, practical plan for building the right solution."
-        buttonLabel="Start a Project"
-        buttonTo="/contact"
-        secondaryLabel="Explore Our Work"
-        secondaryTo="/portfolio"
-      />
+      <div className="-mt-20 sm:-mt-16">
+        <CTASection
+          eyebrow="Let's work together"
+          title="Let's turn your idea into a scalable digital product."
+          description="Tell us about your goals and get a clear, practical plan for building the right solution."
+          buttonLabel="Start a Project"
+          buttonTo="/contact"
+          secondaryLabel="Explore Our Work"
+          secondaryTo="/portfolio"
+        />
+      </div>
     </div>
   );
 };
