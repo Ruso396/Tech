@@ -227,7 +227,7 @@ const HeadOfMarketingSection = () => (
         <div className="absolute -top-8 -right-8 w-56 h-56 rounded-full bg-gradient-to-br from-[#5044E5]/25 to-[#4d8cea]/25 blur-3xl" />
         <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#5044E5]/15 backdrop-blur">
           <img
-            src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1789727069/file_00000000de348210a50a921087fa6b15_jxu3ye.png"
+            src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1789728905/ChatGPT_Image_Sep_18_2026_04_24_08_PM_fnftdy.png"
             alt="Arul Sundar — Head of Marketing at RusoBros Tech"
             loading="lazy"
             decoding="async"
