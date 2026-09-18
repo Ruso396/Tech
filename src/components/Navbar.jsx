@@ -55,6 +55,7 @@ const Navbar = ({ theme, setTheme }) => {
             mx-auto
             flex
             items-center
+            justify-between
             min-h-[76px]
             px-4
             sm:px-8

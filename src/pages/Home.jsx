@@ -4,13 +4,12 @@ import { motion } from "framer-motion";
 import Icon from "../assets/icons";
 import SectionHeading from "../components/SectionHeading";
 import ServiceCard from "../components/ServiceCard";
-import ProductCard from "../components/ProductCard";
 import SplitSection from "../components/SplitSection";
 import CTASection from "../components/CTASection";
 import TechLogoStrip from "../components/TechLogoStrip";
 import { UIMockup } from "../components/mockups/Mockups";
 import usePageMeta from "../hooks/usePageMeta";
-import { servicePreview, products } from "../data/content";
+import { servicePreview } from "../data/content";
 
 /* ---------- Rich hero with layered backgrounds, glow, and a large product shot ---------- */
 const Hero = () => (
@@ -125,23 +124,6 @@ const Hero = () => (
   </section>
 );
 
-/* ---------- Home product card images (per product, different visuals) ---------- */
-const homeProductImages = {
-  "Billing & Business Management":
-    "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80",
-  "eCommerce Platform":
-    "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80",
-  "Clinic Appointment Management":
-    "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=80",
-  "Custom Business Suite":
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80",
-};
-
-const getHomeProductImage = (product) =>
-  product.image ||
-  homeProductImages[product.name] ||
-  homeProductImages["Custom Business Suite"];
-
 /* ---------- Meet the Founder ---------- */
 const FounderSection = () => (
   <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 py-16 sm:py-24 text-gray-700 dark:text-white">
@@ -222,9 +204,9 @@ const HeadOfMarketingSection = () => (
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="relative mx-auto w-full max-w-md lg:max-w-none"
+        className="relative mx-auto w-full max-w-[240px] sm:max-w-[300px] md:max-w-xs lg:max-w-none"
       >
-        <div className="absolute -top-8 -right-8 w-56 h-56 rounded-full bg-gradient-to-br from-[#5044E5]/25 to-[#4d8cea]/25 blur-3xl" />
+        <div className="absolute -top-6 -right-6 w-36 h-36 rounded-full bg-gradient-to-br from-[#5044E5]/25 to-[#4d8cea]/25 blur-3xl sm:-top-8 sm:-right-8 sm:w-56 sm:h-56" />
         <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#5044E5]/15 backdrop-blur">
           <img
             src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1789728905/ChatGPT_Image_Sep_18_2026_04_24_08_PM_fnftdy.png"
@@ -283,11 +265,6 @@ const Home = () => {
     "RusoBros Tech | Full-Stack Development & Digital Solutions",
     "RusoBros Tech builds modern websites, web applications, mobile apps, eCommerce platforms, business software, and custom digital solutions for growing businesses."
   );
-
-  const homeProducts = products.map((product) => ({
-    ...product,
-    image: getHomeProductImage(product),
-  }));
 
   return (
     <div className="overflow-x-clip">
@@ -389,23 +366,6 @@ const Home = () => {
     />
   </div>
 </section>
-      {/* Products */}
-      <section className="relative px-4 sm:px-12 lg:px-24 xl:px-40 py-16 sm:py-24 text-gray-700 dark:text-white">
-        <div className="absolute inset-0 bg-grid opacity-60 dark:opacity-30 pointer-events-none" />
-        <div className="relative z-10">
-          <SectionHeading
-            eyebrow="Our Products"
-            title="Powerful Products. Built for Real Businesses."
-            desc="Ready-to-use business solutions designed to simplify operations and improve productivity."
-          />
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5 max-w-6xl mx-auto mt-12">
-            {homeProducts.map((p, i) => (
-              <ProductCard key={p.name} product={p} index={i} image={p.image} compact />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Full-Stack visual split */}
       <SplitSection
         eyebrow="Full-Stack Development"

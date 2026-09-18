@@ -37,7 +37,19 @@ const App = () => {
   const mouse = useRef({ x: 0, y: 0 });
   const position = useRef({ x: 0, y: 0 });
 
+  const [hasFinePointer, setHasFinePointer] = useState(false);
+
   useEffect(() => {
+    const mq = window.matchMedia("(pointer: fine)");
+    const update = () => setHasFinePointer(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
+  useEffect(() => {
+    if (!hasFinePointer) return undefined;
+
     const handleMouseMove = (e) => {
       mouse.current.x = e.clientX;
       mouse.current.y = e.clientY;
@@ -45,6 +57,7 @@ const App = () => {
 
     document.addEventListener("mousemove", handleMouseMove);
 
+    let raf;
     const animate = () => {
       position.current.x += (mouse.current.x - position.current.x) * 0.1;
       position.current.y += (mouse.current.y - position.current.y) * 0.1;
@@ -53,14 +66,15 @@ const App = () => {
         dotRef.current.style.transform = `translate3D(${mouse.current.x - 6}px, ${mouse.current.y - 6}px, 0)`;
         outlineRef.current.style.transform = `translate3D(${position.current.x - 20}px, ${position.current.y - 20}px, 0)`;
       }
-      requestAnimationFrame(animate);
+      raf = requestAnimationFrame(animate);
     };
-    animate();
+    raf = requestAnimationFrame(animate);
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
+      cancelAnimationFrame(raf);
     };
-  }, []);
+  }, [hasFinePointer]);
 
   return (
     <BrowserRouter>
@@ -87,16 +101,20 @@ const App = () => {
         <Footer />
 
         {/* Custom Cursor Ring */}
-        <div
-          ref={outlineRef}
-          className="fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]"
-          style={{ transition: "transform 0.1s ease-out" }}
-        />
-        {/* Custom Cursor Dot */}
-        <div
-          ref={dotRef}
-          className="fixed top-0 left-0 h-3 w-3 rounded-full bg-primary pointer-events-none z-[9999]"
-        />
+        {hasFinePointer && (
+          <>
+            <div
+              ref={outlineRef}
+              className="fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]"
+              style={{ transition: "transform 0.1s ease-out" }}
+            />
+            {/* Custom Cursor Dot */}
+            <div
+              ref={dotRef}
+              className="fixed top-0 left-0 h-3 w-3 rounded-full bg-primary pointer-events-none z-[9999]"
+            />
+          </>
+        )}
       </div>
     </BrowserRouter>
   );
