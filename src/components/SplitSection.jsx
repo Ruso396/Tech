@@ -19,7 +19,7 @@ const SplitSection = ({
   visualMaxWidth,
   children,
 }) => (
-  <section className="px-4 sm:px-12 lg:px-24 xl:px-40 py-16 sm:py-24 relative">
+  <section className="px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 pb-16 sm:pb-24 relative">
     <div className={`max-w-6xl mx-auto grid lg:grid-cols-2 items-center ${gap}`}>
       {/* Text column */}
       <motion.div
@@ -35,7 +35,7 @@ const SplitSection = ({
           </span>
         )}
         {title && (
-          <h2 className="mt-4 text-2xl sm:text-3xl xl:text-4xl font-medium tracking-tight text-gray-900 dark:text-white leading-tight">
+          <h2 className="mt-4 text-3xl sm:text-5xl font-medium tracking-tight text-gray-900 dark:text-white leading-tight">
             {title}
           </h2>
         )}
@@ -60,7 +60,7 @@ const SplitSection = ({
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to={ctaTo}
-              className="inline-flex items-center gap-2 bg-primary text-white text-sm px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg hover:shadow-primary/30 transition-all"
+              className="inline-flex items-center gap-2 bg-primary text-white text-sm px-6 py-2 rounded-full hover:scale-105 hover:shadow-lg hover:shadow-primary/30 transition-all"
             >
               {ctaLabel}
               <Icon id="arrow" className="w-4 h-4" />

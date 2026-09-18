@@ -24,7 +24,7 @@ const PageHeader = ({ eyebrow, title, desc }) => (
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="text-3xl sm:text-4xl xl:text-5xl font-medium tracking-tight text-gray-900 dark:text-white leading-tight"
+        className="text-3xl sm:text-5xl font-medium tracking-tight text-gray-900 dark:text-white leading-tight"
       >
         {title}
       </motion.h1>
@@ -33,7 +33,7 @@ const PageHeader = ({ eyebrow, title, desc }) => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-sm sm:text-base text-gray-500 dark:text-white/75 max-w-2xl"
+          className="text-sm sm:text-base text-gray-500 dark:text-white/75 max-w-lg"
         >
           {desc}
         </motion.p>

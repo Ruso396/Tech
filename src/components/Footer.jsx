@@ -7,7 +7,7 @@ import { footerColumns, socialLinks, BRAND } from "../data/content";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-50 dark:bg-gray-900 pt-16 mt-20 sm:mt-32 px-4 sm:px-10 lg:px-24 xl:px-40 border-t border-gray-100 dark:border-gray-800">
+    <footer className="bg-slate-50 dark:bg-gray-900 pt-10 mt-20 sm:mt-40 px-4 sm:px-10 lg:px-24 xl:px-40">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ const Footer = () => {
         ))}
       </motion.div>
 
-      <hr className="border-gray-200 dark:border-gray-700" />
+      <hr className="border-gray-300 dark:border-gray-600" />
 
       <div className="py-6 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 text-sm text-gray-500 dark:text-gray-500">
         <p>© 2026 RusoBros Tech. All rights reserved.</p>

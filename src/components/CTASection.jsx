@@ -17,7 +17,7 @@ const CTASection = ({
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6 }}
     viewport={{ once: true }}
-    className="px-4 sm:px-12 lg:px-24 xl:px-40 pt-20 sm:pt-28"
+    className="px-4 sm:px-12 lg:px-24 xl:px-40 pt-30"
   >
     <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#147AFF] via-[#5044E5] to-[#4d8cea] px-6 py-14 sm:px-12 sm:py-20 text-center shadow-2xl shadow-[#5044E5]/30">
       <div className="absolute inset-0 opacity-[0.12]" style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
@@ -30,7 +30,7 @@ const CTASection = ({
             {eyebrow}
           </span>
         )}
-        <h2 className="text-3xl sm:text-4xl xl:text-5xl font-medium text-white leading-tight">
+        <h2 className="text-3xl sm:text-5xl font-medium text-white leading-tight">
           {title}
         </h2>
         {description && <p className="text-sm sm:text-base text-white/85 max-w-xl">{description}</p>}

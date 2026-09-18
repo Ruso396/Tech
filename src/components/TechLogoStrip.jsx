@@ -28,67 +28,53 @@ const brandColors = {
   MongoDB: "#47A248",
 };
 
-const logos = [
-  { name: "", src: platformLogos.microsoft },
-  { name: "", src: platformLogos.google },
-  { name: "React", src: reactLogo },
-  { name: "", src: nodejsLogo },
-  { name: "Next.js", src: nextjsLogo, monochrome: true },
-  { name: "GitHub", src: githubLogo, monochrome: true },
-  { name: "AWS", src: awsLogo },
-  { name: "Laravel", src: laravelLogo },
-  { name: "Flutter", src: flutterLogo },
-  { name: "PostgreSQL", src: postgresqlLogo },
-  { name: "", src: mongodbLogo },
-].map((logo) => ({ color: brandColors[logo.name], ...logo }));
+const logoData = [
+  { name: "Microsoft", src: platformLogos.microsoft, color: brandColors.Microsoft },
+  { name: "Google", src: platformLogos.google, color: brandColors.Google },
+  { name: "React", src: reactLogo, color: brandColors.React },
+  { name: "Node.js", src: nodejsLogo, color: brandColors["Node.js"] },
+  { name: "Next.js", src: nextjsLogo, color: brandColors["Next.js"], monochrome: true },
+  { name: "GitHub", src: githubLogo, color: brandColors.GitHub, monochrome: true },
+  { name: "AWS", src: awsLogo, color: brandColors.AWS },
+  { name: "Laravel", src: laravelLogo, color: brandColors.Laravel },
+  { name: "Flutter", src: flutterLogo, color: brandColors.Flutter },
+  { name: "PostgreSQL", src: postgresqlLogo, color: brandColors.PostgreSQL },
+  { name: "MongoDB", src: mongodbLogo, color: brandColors.MongoDB },
+];
 
-const LogoItem = ({ logo }) => (
-  <div className="group flex items-center gap-2.5 px-6 py-3 shrink-0 transition-all duration-300">
-    <img
-      src={logo.src}
-      alt={logo.name}
-      loading="eager"
-      decoding="async"
-      draggable={false}
-      className={`block h-6 w-auto shrink-0 object-contain ${logo.monochrome ? "dark:invert" : ""}`}
-    />
-    <span
-      className={`text-base font-bold tracking-tight transition-colors ${logo.color ? "" : "text-gray-900 dark:text-white"}`}
-      style={logo.color ? { color: logo.color } : undefined}
+const TechLogoStrip = () => (
+  <section className="px-4 sm:px-12 lg:px-24 xl:px-40 py-10 sm:py-14 text-center text-gray-700 dark:text-white/80">
+    <motion.h3
+      initial={{ opacity: 0, y: 15 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ once: true }}
+      className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-white/50 mb-8"
     >
-      {logo.name}
-    </span>
-  </div>
-);
+      Technologies & Platforms We Work With
+    </motion.h3>
 
-const TechLogoStrip = () => {
-  const row = [...logos, ...logos];
-  return (
-    <section className="px-4 sm:px-12 lg:px-24 xl:px-40 py-10 sm:py-14 text-center">
-      <motion.p
-        initial={{ opacity: 0, y: 12 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-        className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-white/50 mb-6"
-      >
-        Technologies & Platforms We Work With
-      </motion.p>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-        className="marquee-wrap mask-fade-x overflow-hidden"
-      >
-        <div className="animate-marquee flex items-center">
-          {row.map((logo, i) => (
-            <LogoItem key={`${logo.name}-${i}`} logo={logo} />
-          ))}
-        </div>
-      </motion.div>
-    </section>
-  );
-};
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      transition={{ staggerChildren: 0.05 }}
+      viewport={{ once: true }}
+      className="flex items-center justify-center flex-wrap gap-6 sm:gap-10 m-4"
+    >
+      {logoData.map((logo) => (
+        <motion.img
+          key={logo.name}
+          variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+          transition={{ duration: 0.35 }}
+          src={logo.src}
+          alt={logo.name}
+          loading="lazy"
+          decoding="async"
+          className={`max-h-5 sm:max-h-6 dark:drop-shadow-xl ${logo.monochrome ? "dark:invert" : ""}`}
+        />
+      ))}
+    </motion.div>
+  </section>
+);
 
 export default TechLogoStrip;

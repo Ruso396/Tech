@@ -10,7 +10,7 @@ const ProjectCard = ({ project, index = 0 }) => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: (index % 3) * 0.12 }}
     viewport={{ once: true }}
-    className="group rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#5044E5]/10 transition-all duration-300"
+    className="group rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-2xl shadow-gray-100 dark:shadow-white/10 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#5044E5]/10 transition-all duration-300"
   >
     {/* Product preview */}
     <div className="relative h-56 sm:h-60 overflow-hidden">

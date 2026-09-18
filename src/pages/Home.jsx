@@ -13,18 +13,19 @@ import { servicePreview } from "../data/content";
 
 /* ---------- Rich hero with layered backgrounds, glow, and a large product shot ---------- */
 const Hero = () => (
-  <section className="relative overflow-hidden pt-16 sm:pt-24 pb-16 sm:pb-24 px-4 sm:px-12 lg:px-24 xl:px-40 text-gray-700 dark:text-white">
-    <div className="absolute inset-0 bg-grid" />
-    <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[44rem] h-[26rem] rounded-full bg-[#5044E5]/15 blur-3xl" />
-    <div className="absolute top-24 -right-24 w-80 h-80 rounded-full bg-[#4d8cea]/20 blur-3xl" />
-    <div className="absolute -left-24 bottom-0 w-80 h-80 rounded-full bg-[#147AFF]/15 blur-3xl" />
+  <section className="relative flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white">
+    {/* Decorative background blob (dark:hidden like the reference site) */}
+    <div className="absolute -top-40 -right-40 sm:-top-100 sm:-right-70 w-[26rem] h-[26rem] rounded-full bg-[#5044E5]/25 blur-3xl dark:hidden pointer-events-none" />
 
-    <div className="relative z-10 flex flex-col items-center gap-7 text-center">
+    {/* Soft blue/purple radial glow spreading from the center/right (reference treatment) */}
+    <div className="absolute top-1/2 right-[-25%] w-[130%] h-[80%] -translate-y-1/2 bg-[radial-gradient(ellipse_at_center,rgba(80,68,229,0.15)_0%,rgba(77,140,234,0.10)_45%,transparent_72%)] dark:hidden pointer-events-none" />
+
+    <div className="relative z-10 flex flex-col items-center gap-6">
       <motion.span
-        initial={{ opacity: 0, y: 16 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="inline-flex items-center gap-2 border border-gray-300 dark:border-gray-600 p-1.5 pr-4 rounded-full bg-white/60 dark:bg-gray-900/60 backdrop-blur"
+        transition={{ duration: 0.5, delay: 0.7 }}
+        className="inline-flex items-center justify-center gap-2 border border-gray-300 dark:border-gray-600 p-1.5 pr-4 rounded-full max-w-full flex-wrap"
       >
         <span className="size-5 rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5]" />
         <p className="text-xs font-medium">Design • Development • Technology • Growth</p>
@@ -33,8 +34,8 @@ const Hero = () => (
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.15 }}
-        className="text-4xl sm:text-5xl md:text-6xl xl:text-[72px] font-medium xl:leading-[1.15] max-w-5xl tracking-tight"
+        transition={{ duration: 0.6, delay: 0.8 }}
+        className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl tracking-tight"
       >
         We Build Digital Solutions That Move{" "}
         <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
@@ -46,8 +47,8 @@ const Hero = () => (
       <motion.p
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-2xl"
+        transition={{ duration: 0.5, delay: 1 }}
+        className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 sm:max-w-lg pb-3"
       >
         From custom software and full-stack applications to mobile apps, eCommerce platforms, and
         business automation — RusoBros Tech builds technology around the way your business works.
@@ -56,19 +57,19 @@ const Hero = () => (
       <motion.div
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        transition={{ duration: 0.6, delay: 1.2 }}
         className="flex flex-wrap items-center justify-center gap-3 pt-1"
       >
         <Link
           to="/contact"
-          className="inline-flex items-center gap-2 bg-primary text-white text-sm px-8 py-3.5 rounded-full hover:scale-105 hover:shadow-lg hover:shadow-primary/30 transition-all"
+          className="inline-flex items-center gap-2 bg-primary text-white text-sm px-6 py-2 rounded-full hover:scale-105 transition-transform"
         >
           Start Your Project
           <Icon id="arrow" className="w-4 h-4" />
         </Link>
         <Link
           to="/services"
-          className="inline-flex items-center gap-2 text-sm font-semibold px-8 py-3.5 rounded-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 hover:scale-105 transition-all"
+          className="inline-flex items-center gap-2 text-sm px-6 py-2 rounded-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 hover:scale-105 transition-all"
         >
           Explore Our Solutions
         </Link>
@@ -76,48 +77,19 @@ const Hero = () => (
 
       {/* Large product shot */}
       <motion.div
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        className="w-full max-w-4xl mx-auto pt-6 sm:pt-10"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 1.6 }}
+        className="relative w-full"
       >
-        <div className="relative">
-          <div className="absolute -top-16 -right-10 w-72 h-72 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#5044E5]/25 blur-3xl" />
-          <div className="absolute -bottom-20 -left-10 w-64 h-64 rounded-full bg-[#4d8cea]/20 blur-3xl" />
-
-          <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-gray-200/70 dark:border-gray-800 shadow-2xl shadow-[#5044E5]/20">
-            <img
-              src="https://agencyai-01.netlify.app/assets/hero_img-ySDs5NA2.png"
-              alt="RusoBros Tech digital solutions hero banner"
-              loading="eager"
-              decoding="async"
-              className="w-full h-44 sm:h-72 md:h-96 lg:h-[26rem] object-cover"
-            />
-          </div>
-
-          {/* Floating accent cards */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.9, duration: 0.5 }}
-            className="absolute -left-4 sm:-left-8 top-1/2 -translate-y-1/2 hidden md:flex items-center gap-2 bg-white dark:bg-gray-900 rounded-xl px-3.5 py-2.5 shadow-xl border border-gray-100 dark:border-gray-700 text-xs font-semibold text-gray-700 dark:text-gray-200"
-          >
-            <span className="size-7 rounded-lg bg-gradient-to-br from-[#147AFF] to-[#5044E5] flex items-center justify-center text-white">
-              <Icon id="zap" className="w-4 h-4" />
-            </span>
-            GST Billing Ready
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 1.05, duration: 0.5 }}
-            className="absolute -right-4 sm:-right-8 top-1/2 -translate-y-1/2 hidden md:flex items-center gap-2 bg-white dark:bg-gray-900 rounded-xl px-3.5 py-2.5 shadow-xl border border-gray-100 dark:border-gray-700 text-xs font-semibold text-gray-700 dark:text-gray-200"
-          >
-            <span className="size-7 rounded-lg bg-gradient-to-br from-[#5044E5] to-[#4d8cea] flex items-center justify-center text-white">
-              <Icon id="check" className="w-4 h-4" />
-            </span>
-            WhatsApp Invoices
-          </motion.div>
+        <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-3xl border border-gray-200/70 dark:border-gray-800 shadow-2xl shadow-[#5044E5]/15">
+          <img
+            src="https://agencyai-01.netlify.app/assets/hero_img-ySDs5NA2.png"
+            alt="RusoBros Tech digital solutions hero banner"
+            loading="eager"
+            decoding="async"
+            className="w-full relative z-10"
+          />
         </div>
       </motion.div>
     </div>
@@ -126,7 +98,7 @@ const Hero = () => (
 
 /* ---------- Meet the Founder ---------- */
 const FounderSection = () => (
-  <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 py-16 sm:py-24 text-gray-700 dark:text-white">
+  <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 pb-16 sm:pb-24 text-gray-700 dark:text-white">
     <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#147AFF]/10 blur-3xl" />
     <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#5044E5]/10 blur-3xl" />
 
@@ -194,7 +166,7 @@ const FounderSection = () => (
 
 /* ---------- Head of Marketing ---------- */
 const HeadOfMarketingSection = () => (
-  <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 py-16 sm:py-24 text-gray-700 dark:text-white">
+  <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 pb-16 sm:pb-24 text-gray-700 dark:text-white">
     <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#5044E5]/10 blur-3xl" />
     <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#147AFF]/10 blur-3xl" />
 
@@ -273,7 +245,7 @@ const Home = () => {
       <TechLogoStrip />
 
       {/* Trust / Intro */}
-      <section className="px-4 sm:px-12 lg:px-24 xl:px-40 py-16 sm:py-24">
+      <section className="px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 pb-16 sm:pb-24">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6 text-center">
           <SectionHeading
             eyebrow="Why RusoBros Tech"
@@ -297,7 +269,7 @@ const Home = () => {
       <HeadOfMarketingSection />
 
       {/* Services Preview */}
-      <section className="relative px-4 sm:px-12 lg:px-24 xl:px-40 py-16 sm:py-24 text-gray-700 dark:text-white">
+      <section className="relative px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 pb-16 sm:pb-24 text-gray-700 dark:text-white">
         <div className="absolute inset-0 bg-grid opacity-60 dark:opacity-30 pointer-events-none" />
         <div className="relative z-10">
           <SectionHeading
@@ -323,7 +295,7 @@ const Home = () => {
       </section>
 
       {/* Featured Product */}
-<section className="relative w-full overflow-hidden px-4 py-14 sm:px-8 sm:py-20 lg:px-12 lg:py-24 xl:px-20 2xl:px-28">
+<section className="relative w-full overflow-hidden px-4 pt-30 pb-14 sm:px-8 sm:pb-20 lg:px-12 lg:pb-24 xl:px-20 2xl:px-28">
   {/* Background glow */}
   <div className="pointer-events-none absolute -top-24 -right-32 h-96 w-96 rounded-full bg-[#5044E5]/10 blur-3xl" />
 
