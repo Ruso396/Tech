@@ -74,10 +74,10 @@ const Window = ({ label, children, className = "" }) => (
 const BillingScene = () => (
   <>
     <div className="grid grid-cols-4 gap-2">
-      <StatCard label="Revenue" value="₹86,420" delta="+12.4%" />
-      <StatCard label="Invoices" value="1,284" delta="+8.1%" />
+      <StatCard label="Revenue" value="₹86K" delta="+12.4%" />
+      <StatCard label="Invoices" value="884" delta="+8.1%" />
       <StatCard label="Customers" value="642" delta="+5.6%" />
-      <StatCard label="Due" value="₹14,920" delta="-2.2%" />
+      <StatCard label="Due" value="₹14K" delta="-2.2%" />
     </div>
     <div className="grid sm:grid-cols-5 gap-2 mt-2 flex-1 min-h-0">
       <Panel title="Revenue Overview" right="This year" className="sm:col-span-3 flex flex-col">
