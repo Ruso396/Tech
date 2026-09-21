@@ -291,50 +291,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Product */}
-<section className="relative w-full overflow-hidden px-4 pt-8 pb-8 sm:px-8 sm:pb-12 lg:px-12 lg:pb-16 xl:px-20 2xl:px-28">
-  {/* Background glow */}
-  <div className="pointer-events-none absolute -top-24 -right-32 h-96 w-96 rounded-full bg-[#5044E5]/10 blur-3xl" />
 
-  <div className="relative mx-auto w-full max-w-[1400px] -mt-20 sm:-mt-16">
-    <SplitSection
-      eyebrow="Featured Product"
-      title={
-        <>
-          Run Your Business{" "}
-          <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
-            Smarter.
-          </span>
-        </>
-      }
-      desc="From creating GST invoices to tracking purchases, customers, payments, and reports, our billing platform brings everyday business operations into one powerful system."
-      bullets={[
-        "GST Billing & Invoices",
-        "WhatsApp Invoice Sharing",
-        "Purchase & Inventory",
-        "Payments, Customers & Reports",
-      ]}
-      visual="billing"
-      label="Billing & Business Management"
-      chips={[
-        {
-          icon: "file",
-          label: "Invoices",
-          className: "-top-5 -right-2 sm:-right-4",
-        },
-        {
-          icon: "chart",
-          label: "Live Reports",
-          className: "bottom-5 -left-2 sm:-left-4",
-        },
-      ]}
-      ctaLabel="Explore Product"
-      ctaTo="/products/billing"
-      gap="gap-8 lg:gap-12 xl:gap-16"
-      visualMaxWidth="w-full max-w-[580px] lg:max-w-[620px] xl:max-w-[640px]"
-    />
-  </div>
-</section>
       {/* Full-Stack visual split */}
       <div className="-mt-20 sm:-mt-16 text-gray-700 dark:text-white">
         <SplitSection
