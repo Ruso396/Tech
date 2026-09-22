@@ -110,7 +110,7 @@ const FounderSection = () => (
         <div className="absolute -top-8 -right-8 w-56 h-56 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#5044E5]/25 blur-3xl" />
         <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#5044E5]/15 backdrop-blur">
           <img
-            src="https://www.alphajwc.com/wp-content/uploads/2023/04/portrait-cheerful-attractive-handsome-businessman-holding-hands-with-confident-face-looking-camera-standing-grey-background.jpg"
+            src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1790058917/5ea034aa4cd1a61e2a55688c18d7e2b6313b73d6d4bc746a015afc60077f9dee_nlehkg.png"
             alt="Kalam Ruso K — Founder & CEO of RusoBros Tech"
             loading="lazy"
             decoding="async"
