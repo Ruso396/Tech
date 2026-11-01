@@ -358,8 +358,8 @@ const TechCard = ({ techKey, index }) => {
 
 const Technologies = () => {
   usePageMeta(
-    "Technologies | RusoBros Tech",
-    "RusoBros Tech builds with React, Next.js, JavaScript, TypeScript, Tailwind CSS, React Native, Flutter, Node.js, Laravel, PHP, MySQL, PostgreSQL, MongoDB, cloud deployment, APIs, and modern development practices."
+    "Technologies | RUHA Tech",
+    "RUHA Tech builds with React, Next.js, JavaScript, TypeScript, Tailwind CSS, React Native, Flutter, Node.js, Laravel, PHP, MySQL, PostgreSQL, MongoDB, cloud deployment, APIs, and modern development practices."
   );
 
   return (

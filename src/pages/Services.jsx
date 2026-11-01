@@ -7,8 +7,8 @@ import { allServices } from "../data/content";
 
 const Services = () => {
   usePageMeta(
-    "Services | RusoBros Tech — Full-Stack Development, Web, Mobile, eCommerce & Business Software",
-    "RusoBros Tech provides full-stack development, website development, mobile apps, eCommerce, SaaS, custom business software, API development, database, UI/UX, cloud deployment, and maintenance support."
+    "Services | RUHA Tech — Full-Stack Development, Web, Mobile, eCommerce & Business Software",
+    "RUHA Tech provides full-stack development, website development, mobile apps, eCommerce, SaaS, custom business software, API development, database, UI/UX, cloud deployment, and maintenance support."
   );
 
   return (

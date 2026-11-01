@@ -1,9 +1,9 @@
 export const BRAND = {
-  name: "RusoBros Tech",
+  name: "RUHA Tech",
   tagline: "We Build Digital Solutions That Move Your Business Forward.",
   description:
-    "RusoBros Tech builds modern websites, web applications, mobile apps, eCommerce platforms, business software, and custom digital products designed around your business goals.",
-  email: "hello@rusobrostech.com", // PLACEHOLDER — replace with the real contact email
+    "RUHA Tech builds modern websites, web applications, mobile apps, eCommerce platforms, business software, and custom digital products designed around your business goals.",
+  email: "hello@RUHAtech.com", // PLACEHOLDER — replace with the real contact email
   phone: "+91 9585353354", // PLACEHOLDER — replace with the real contact number
   location: "Serving businesses worldwide — remote team", // PLACEHOLDER — replace with office location
 };

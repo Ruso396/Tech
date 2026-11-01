@@ -383,7 +383,7 @@ const CloudScene = () => (
       </div>
       <div className="flex items-center gap-2">
         <span className="rounded bg-emerald-500/15 text-emerald-600 text-[7px] font-semibold px-1.5 py-0.5">●</span>
-        <span className="text-[8px] font-semibold text-gray-700">production.rusobrostech.com</span>
+        <span className="text-[8px] font-semibold text-gray-700">production.RUHAtech.com</span>
         <span className="ml-auto"><Chip c="bg-emerald-500/10 text-emerald-600">Live</Chip></span>
       </div>
       <div className="flex items-center gap-2">

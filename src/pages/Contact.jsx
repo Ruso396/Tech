@@ -35,8 +35,8 @@ const contactItems = [
 
 const Contact = () => {
   usePageMeta(
-    "Contact Us | RusoBros Tech",
-    "Contact RusoBros Tech to start your project. Tell us what you're building and get a practical plan for a digital solution."
+    "Contact Us | RUHA Tech",
+    "Contact RUHA Tech to start your project. Tell us what you're building and get a practical plan for a digital solution."
   );
 
   return (
@@ -108,7 +108,7 @@ const Contact = () => {
                 Send us one line about your idea and we'll reply with a few quick questions.
               </p>
               <a
-                href={`mailto:${BRAND.email}?subject=Project%20Enquiry%20—%20RusoBros%20Tech`}
+                href={`mailto:${BRAND.email}?subject=Project%20Enquiry%20—%20RUHA%20Tech`}
                 className="mt-5 inline-flex items-center gap-2 bg-white text-[#5044E5] font-semibold text-sm px-6 py-2.5 rounded-full hover:scale-105 transition-all"
               >
                 {BRAND.email}

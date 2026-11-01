@@ -27,7 +27,7 @@ const Footer = () => {
               href={socialLinks.linkedin}
               target="_blank"
               rel="noreferrer"
-              aria-label="RusoBros Tech on LinkedIn"
+              aria-label="RUHA Tech on LinkedIn"
               className="size-9 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition-colors"
             >
               <Icon id="linkedin" className="w-4 h-4" />
@@ -36,7 +36,7 @@ const Footer = () => {
               href={socialLinks.github}
               target="_blank"
               rel="noreferrer"
-              aria-label="RusoBros Tech on GitHub"
+              aria-label="RUHA Tech on GitHub"
               className="size-9 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition-colors"
             >
               <Icon id="github" className="w-4 h-4" />
@@ -45,14 +45,14 @@ const Footer = () => {
               href={socialLinks.twitter}
               target="_blank"
               rel="noreferrer"
-              aria-label="RusoBros Tech on X (Twitter)"
+              aria-label="RUHA Tech on X (Twitter)"
               className="size-9 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition-colors"
             >
               <Icon id="twitter" className="w-4 h-4" />
             </a>
             <a
               href={`mailto:${BRAND.email}`}
-              aria-label="Email RusoBros Tech"
+              aria-label="Email RUHA Tech"
               className="size-9 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition-colors"
             >
               <Icon id="mail" className="w-4 h-4" />
@@ -83,7 +83,7 @@ const Footer = () => {
       <hr className="border-gray-300 dark:border-gray-600" />
 
       <div className="py-6 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 text-sm text-gray-500 dark:text-gray-500">
-        <p>© 2026 RusoBros Tech. All rights reserved.</p>
+        <p>© 2026 RUHA Tech. All rights reserved.</p>
         <p>Design • Development • Technology • Growth</p>
       </div>
     </footer>

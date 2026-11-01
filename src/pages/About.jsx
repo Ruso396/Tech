@@ -20,8 +20,8 @@ const approach = [
 
 const About = () => {
   usePageMeta(
-    "About Us | RusoBros Tech",
-    "RusoBros Tech is a technology solutions company focused on building reliable, scalable, and user-friendly digital products for businesses."
+    "About Us | RUHA Tech",
+    "RUHA Tech is a technology solutions company focused on building reliable, scalable, and user-friendly digital products for businesses."
   );
 
   return (
@@ -37,7 +37,7 @@ const About = () => {
             </span>
           </>
         }
-        desc="RusoBros Tech is a technology solutions company focused on building reliable, scalable, and user-friendly digital products for businesses."
+        desc="RUHA Tech is a technology solutions company focused on building reliable, scalable, and user-friendly digital products for businesses."
       />
 
       {/* Story */}

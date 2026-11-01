@@ -1,6 +1,6 @@
-# RusoBros Tech
+# RUHA Tech
 
-A premium, multi-page marketing website for **RusoBros Tech** — a modern IT solutions and software development company that builds custom websites, web applications, mobile apps, eCommerce platforms, business software, SaaS products, and digital marketing support.
+A premium, multi-page marketing website for **RUHA Tech** — a modern IT solutions and software development company that builds custom websites, web applications, mobile apps, eCommerce platforms, business software, SaaS products, and digital marketing support.
 
 Built with **React (Vite)**, **React Router**, **Tailwind CSS**, and **Framer Motion**.
 

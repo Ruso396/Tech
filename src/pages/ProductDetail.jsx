@@ -14,11 +14,11 @@ const ProductDetail = () => {
 
   usePageMeta(
     product
-      ? `${product.name} | RusoBros Tech`
-      : "Product | RusoBros Tech",
+      ? `${product.name} | RUHA Tech`
+      : "Product | RUHA Tech",
     product
       ? `${product.tagline} ${product.description}`
-      : "Explore RusoBros Tech products."
+      : "Explore RUHA Tech products."
   );
 
   if (!product) {

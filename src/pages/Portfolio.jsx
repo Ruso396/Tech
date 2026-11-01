@@ -115,8 +115,8 @@ const ProductCard = ({ product, index }) => (
 
 const Portfolio = () => {
   usePageMeta(
-    "Portfolio | RusoBros Tech — Selected Products",
-    "Ready-to-use products by RusoBros Tech: billing and GST platforms, POS and inventory, eCommerce, clinic management, CRM, and education management systems."
+    "Portfolio | RUHA Tech — Selected Products",
+    "Ready-to-use products by RUHA Tech: billing and GST platforms, POS and inventory, eCommerce, clinic management, CRM, and education management systems."
   );
 
   return (

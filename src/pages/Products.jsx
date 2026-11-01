@@ -174,8 +174,8 @@ const ProductShowcaseCard = ({ product, index }) => (
 /* ---------- Page ---------- */
 const Products = () => {
   usePageMeta(
-    "Products | RusoBros Tech — Billing, eCommerce & Clinic Software",
-    "RusoBros Tech builds ready-to-use software products — billing & business management, eCommerce platforms, clinic appointment management, and custom business solutions."
+    "Products | RUHA Tech — Billing, eCommerce & Clinic Software",
+    "RUHA Tech builds ready-to-use software products — billing & business management, eCommerce platforms, clinic appointment management, and custom business solutions."
   );
 
   const [featured, ...rest] = products;

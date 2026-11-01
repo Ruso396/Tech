@@ -112,8 +112,8 @@ const MarketingCard = ({ service, index = 0 }) => (
 
 const DigitalMarketing = () => {
   usePageMeta(
-    "Digital Marketing | RusoBros Tech",
-    "RusoBros Tech provides digital marketing support — social media management, SEO, content strategy, digital advertising, landing pages, conversion optimization, and analytics."
+    "Digital Marketing | RUHA Tech",
+    "RUHA Tech provides digital marketing support — social media management, SEO, content strategy, digital advertising, landing pages, conversion optimization, and analytics."
   );
 
   return (

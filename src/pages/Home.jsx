@@ -48,7 +48,7 @@ const Hero = () => (
         className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 sm:max-w-lg pb-3"
       >
         From custom software and full-stack applications to mobile apps, eCommerce platforms, and
-        business automation — RusoBros Tech builds technology around the way your business works.
+        business automation — RUHA Tech builds technology around the way your business works.
       </motion.p>
 
       <motion.div
@@ -82,7 +82,7 @@ const Hero = () => (
         <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-3xl border border-gray-200/70 dark:border-gray-800 shadow-2xl shadow-[#5044E5]/15">
           <img
             src="https://agencyai-01.netlify.app/assets/hero_img-ySDs5NA2.png"
-            alt="RusoBros Tech digital solutions hero banner"
+            alt="RUHA Tech digital solutions hero banner"
             loading="eager"
             decoding="async"
             className="w-full relative z-10"
@@ -111,7 +111,7 @@ const FounderSection = () => (
         <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#5044E5]/15 backdrop-blur">
           <img
             src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1790058917/5ea034aa4cd1a61e2a55688c18d7e2b6313b73d6d4bc746a015afc60077f9dee_nlehkg.png"
-            alt="Kalam Ruso K — Founder & CEO of RusoBros Tech"
+            alt="Kalam Ruso K — Founder & CEO of RUHA Tech"
             loading="lazy"
             decoding="async"
             className="w-full h-auto rounded-[calc(2rem-0.5rem)]"
@@ -139,11 +139,11 @@ const FounderSection = () => (
 
         <p className="mt-6 text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Kalam Ruso K</p>
         <p className="mt-1 text-sm font-semibold text-gray-500 dark:text-white/70">
-          Founder & CEO — RusoBros Tech
+          Founder & CEO — RUHA Tech
         </p>
 
         <p className="mt-5 max-w-xl text-sm sm:text-base leading-relaxed text-gray-500 dark:text-white/75">
-          Kalam Ruso K built RusoBros Tech to turn complex business challenges into simple, powerful
+          Kalam Ruso K built RUHA Tech to turn complex business challenges into simple, powerful
           digital products. Leading a team of engineers, designers, and strategists, he focuses on
           delivering modern, reliable, and scalable IT solutions — from full-stack web platforms and
           mobile apps to business automation and cloud infrastructure.
@@ -179,7 +179,7 @@ const HeadOfMarketingSection = () => (
         <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#5044E5]/15 backdrop-blur">
           <img
             src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1789728905/ChatGPT_Image_Sep_18_2026_04_24_08_PM_fnftdy.png"
-            alt="Arul Sundar — Head of Marketing at RusoBros Tech"
+            alt="Arul Sundar — Head of Marketing at RUHA Tech"
             loading="lazy"
             decoding="async"
             className="w-full h-auto rounded-[calc(2rem-0.5rem)]"
@@ -207,11 +207,11 @@ const HeadOfMarketingSection = () => (
 
         <p className="mt-6 text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Arul Sundar</p>
         <p className="mt-1 text-sm font-semibold text-gray-500 dark:text-white/70">
-          Head of Marketing — RusoBros Tech
+          Head of Marketing — RUHA Tech
         </p>
 
         <p className="mt-5 max-w-xl text-sm sm:text-base leading-relaxed text-gray-500 dark:text-white/75">
-          Arul Sundar leads marketing at RusoBros Tech, driving brand growth, digital campaigns,
+          Arul Sundar leads marketing at RUHA Tech, driving brand growth, digital campaigns,
           and customer reach across the products and solutions we build. With a clear focus on
           measurable results, he connects our technology to the right audience — through social
           media, SEO, content, advertising, and data-backed strategy.
@@ -231,8 +231,8 @@ const HeadOfMarketingSection = () => (
 
 const Home = () => {
   usePageMeta(
-    "RusoBros Tech | Full-Stack Development & Digital Solutions",
-    "RusoBros Tech builds modern websites, web applications, mobile apps, eCommerce platforms, business software, and custom digital solutions for growing businesses."
+    "RUHA Tech | Full-Stack Development & Digital Solutions",
+    "RUHA Tech builds modern websites, web applications, mobile apps, eCommerce platforms, business software, and custom digital solutions for growing businesses."
   );
 
   return (
@@ -245,9 +245,9 @@ const Home = () => {
       <section className="px-4 sm:px-12 lg:px-24 xl:px-40 pt-8 sm:pt-14 pb-12 sm:pb-16">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6 text-center">
           <SectionHeading
-            eyebrow="Why RusoBros Tech"
+            eyebrow="Why RUHA Tech"
             title="Technology Built Around Your Business"
-            desc="We don't believe in one-size-fits-all software. RusoBros Tech combines thoughtful UI/UX, reliable engineering, scalable architecture, and business-focused thinking to create digital solutions that are practical, powerful, and built to grow."
+            desc="We don't believe in one-size-fits-all software. RUHA Tech combines thoughtful UI/UX, reliable engineering, scalable architecture, and business-focused thinking to create digital solutions that are practical, powerful, and built to grow."
           />
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             {["Full-Stack Development", "Business Solutions", "Digital Products"].map((t) => (
