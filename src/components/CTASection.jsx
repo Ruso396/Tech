@@ -19,7 +19,7 @@ const CTASection = ({
     viewport={{ once: true }}
     className="px-4 sm:px-12 lg:px-24 xl:px-40 pt-30"
   >
-    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#147AFF] via-[#5044E5] to-[#4d8cea] px-6 py-14 sm:px-12 sm:py-20 text-center shadow-2xl shadow-[#5044E5]/30">
+    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#147AFF] via-[#800020] to-[#C8102E] px-6 py-14 sm:px-12 sm:py-20 text-center shadow-2xl shadow-[#C8102E]/30">
       <div className="absolute inset-0 opacity-[0.12]" style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
       <div className="absolute -left-16 -top-16 w-64 h-64 rounded-full bg-white/10" />
       <div className="absolute -right-16 -bottom-16 w-64 h-64 rounded-full bg-white/10" />
@@ -37,7 +37,7 @@ const CTASection = ({
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
           <Link
             to={buttonTo}
-            className="inline-flex items-center gap-2 bg-white text-[#5044E5] font-semibold text-sm px-8 py-3.5 rounded-full hover:scale-105 hover:shadow-xl transition-all"
+            className="inline-flex items-center gap-2 bg-white text-[#C8102E] font-semibold text-sm px-8 py-3.5 rounded-full hover:scale-105 hover:shadow-xl transition-all"
           >
             {buttonLabel}
             <Icon id="arrow" className="w-4 h-4" />

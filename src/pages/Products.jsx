@@ -36,7 +36,7 @@ const productTags = {
 const getProductImage = (product) => productImages[product.id] || productImages.business;
 
 const CategoryLabel = ({ children }) => (
-  <p className="text-[11px] font-bold uppercase tracking-widest bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+  <p className="text-[11px] font-bold uppercase tracking-widest bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
     {children}
   </p>
 );
@@ -52,7 +52,7 @@ const FeaturedProduct = ({ product }) => (
   >
     {/* Visual */}
     <div className="relative md:w-2/5 h-56 sm:h-64 md:h-auto overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/10 via-white to-[#5044E5]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#5044E5]/15" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/10 via-white to-[#C8102E]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#C8102E]/15" />
       <div className="absolute inset-0 bg-grid opacity-50 dark:opacity-30" />
       <img
         src={getProductImage(product)}
@@ -64,7 +64,7 @@ const FeaturedProduct = ({ product }) => (
       <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent pointer-events-none" />
 
       <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 bg-white/90 dark:bg-gray-900/90 backdrop-blur px-3 py-1.5 rounded-full text-[11px] font-semibold text-gray-800 dark:text-white shadow-lg">
-        <Icon id="zap" className="w-3.5 h-3.5 text-[#5044E5]" />
+        <Icon id="zap" className="w-3.5 h-3.5 text-[#C8102E]" />
         GST Billing Ready
       </span>
       <span className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 bg-white/90 dark:bg-gray-900/90 backdrop-blur px-3 py-1.5 rounded-full text-[11px] font-semibold text-gray-800 dark:text-white shadow-lg">
@@ -91,7 +91,7 @@ const FeaturedProduct = ({ product }) => (
       <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
         {(productTags[product.name] || product.features.slice(0, 4)).map((feature) => (
           <li key={feature} className="flex items-center gap-2.5 text-sm font-medium text-gray-700 dark:text-white/85">
-            <span className="size-5 shrink-0 rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5] text-white flex items-center justify-center shadow shadow-[#5044E5]/30">
+            <span className="size-5 shrink-0 rounded-full bg-gradient-to-br from-[#800020] to-[#C8102E] text-white flex items-center justify-center shadow shadow-[#C8102E]/30">
               <Icon id="check" className="w-3 h-3" />
             </span>
             {feature}
@@ -126,11 +126,11 @@ const ProductShowcaseCard = ({ product, index }) => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: index * 0.08 }}
     viewport={{ once: true, amount: 0.15 }}
-    className="group flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#5044E5]/10 transition-all duration-300"
+    className="group flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#C8102E]/10 transition-all duration-300"
   >
     {/* Image */}
     <div className="relative h-44 sm:h-48 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/10 via-white to-[#5044E5]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#5044E5]/15" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/10 via-white to-[#C8102E]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#C8102E]/15" />
       <div className="absolute inset-0 bg-grid opacity-50 dark:opacity-30" />
       <img
         src={getProductImage(product)}
@@ -187,7 +187,7 @@ const Products = () => {
         title={
           <>
             Powerful Products. Built for{" "}
-            <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
               Real Businesses.
             </span>
           </>
@@ -205,7 +205,7 @@ const Products = () => {
           className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white"
         >
           Software designed around{" "}
-          <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
             real business needs.
           </span>
         </motion.p>

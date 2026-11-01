@@ -54,7 +54,7 @@ const ProductDetail = () => {
       {/* Header */}
       <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 py-10 sm:py-14">
         <div className="absolute inset-0 bg-grid" />
-        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[40rem] h-[22rem] rounded-full bg-[#5044E5]/15 blur-3xl" />
+        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[40rem] h-[22rem] rounded-full bg-[#C8102E]/15 blur-3xl" />
         <div className="absolute -right-20 top-24 w-72 h-72 rounded-full bg-[#4d8cea]/15 blur-3xl" />
 
         <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -63,7 +63,7 @@ const ProductDetail = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-[#5044E5] dark:text-[#4d8cea] bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 rounded-full">
+            <span className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-[#C8102E] dark:text-[#4d8cea] bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 rounded-full">
               <Icon id={product.icon} className="w-4 h-4" />
               Product
             </span>
@@ -106,9 +106,9 @@ const ProductDetail = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="relative"
           >
-            <div className="absolute -top-14 -right-14 w-56 h-56 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#5044E5]/25 blur-3xl" />
+            <div className="absolute -top-14 -right-14 w-56 h-56 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#C8102E]/25 blur-3xl" />
             <div className="absolute -bottom-16 -left-10 w-52 h-52 rounded-full bg-[#4d8cea]/20 blur-3xl" />
-            <div className="relative rounded-3xl p-2 sm:p-3 bg-gradient-to-br from-[#147AFF]/15 via-white/40 to-[#5044E5]/15 dark:from-[#147AFF]/20 dark:via-gray-900 dark:to-[#5044E5]/20 shadow-2xl shadow-[#5044E5]/15">
+            <div className="relative rounded-3xl p-2 sm:p-3 bg-gradient-to-br from-[#147AFF]/15 via-white/40 to-[#C8102E]/15 dark:from-[#147AFF]/20 dark:via-gray-900 dark:to-[#C8102E]/20 shadow-2xl shadow-[#C8102E]/15">
               <UIMockup type={product.visual || product.id} label={product.name} className="w-full" />
             </div>
           </motion.div>
@@ -170,7 +170,7 @@ const ProductDetail = () => {
               </ul>
             </div>
 
-            <div className="rounded-2xl bg-gradient-to-br from-[#147AFF]/10 via-white/40 to-[#5044E5]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#5044E5]/15 border border-gray-200 dark:border-gray-700 p-6 relative overflow-hidden">
+            <div className="rounded-2xl bg-gradient-to-br from-[#147AFF]/10 via-white/40 to-[#C8102E]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#C8102E]/15 border border-gray-200 dark:border-gray-700 p-6 relative overflow-hidden">
               <div className="absolute inset-0 bg-grid opacity-50 dark:opacity-30 pointer-events-none" />
               <div className="relative">
                 <h3 className="font-bold text-gray-900 dark:text-white flex items-center gap-2">
@@ -180,7 +180,7 @@ const ProductDetail = () => {
                 <ul className="mt-4 space-y-3">
                   {product.useCases.map((u) => (
                     <li key={u} className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-300">
-                      <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-gradient-to-r from-[#147AFF] to-[#5044E5]" />
+                      <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-gradient-to-r from-[#800020] to-[#C8102E]" />
                       {u}
                     </li>
                   ))}

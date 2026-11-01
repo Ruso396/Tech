@@ -30,7 +30,7 @@ const SplitSection = ({
         className={reverse ? "lg:order-2" : "lg:order-1"}
       >
         {eyebrow && (
-          <span className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-[#5044E5] dark:text-[#4d8cea] bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 rounded-full">
+          <span className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-[#C8102E] dark:text-[#4d8cea] bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 rounded-full">
             {eyebrow}
           </span>
         )}
@@ -78,9 +78,9 @@ const SplitSection = ({
         className={reverse ? "lg:order-1" : "lg:order-2"}
       >
         <div className={`relative w-full ${visualMaxWidth ? `${visualMaxWidth} mx-auto` : ""}`}>
-          <div className="absolute -top-14 -right-14 w-56 h-56 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#5044E5]/25 blur-3xl" />
+          <div className="absolute -top-14 -right-14 w-56 h-56 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#C8102E]/25 blur-3xl" />
           <div className="absolute -bottom-16 -left-10 w-52 h-52 rounded-full bg-[#4d8cea]/20 blur-3xl" />
-          <div className="relative rounded-3xl border border-gray-100 dark:border-gray-800 bg-gradient-to-br from-[#147AFF]/10 via-white to-[#5044E5]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#5044E5]/15 p-4 sm:p-6">
+          <div className="relative rounded-3xl border border-gray-100 dark:border-gray-800 bg-gradient-to-br from-[#147AFF]/10 via-white to-[#C8102E]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#C8102E]/15 p-4 sm:p-6">
             <div className="absolute inset-0 bg-grid opacity-50 dark:opacity-30 rounded-3xl pointer-events-none" />
             <UIMockup type={visual} label={label} className="relative" />
           </div>

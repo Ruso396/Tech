@@ -10,13 +10,13 @@ const ProjectCard = ({ project, index = 0 }) => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: (index % 3) * 0.12 }}
     viewport={{ once: true }}
-    className="group rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-2xl shadow-gray-100 dark:shadow-white/10 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#5044E5]/10 transition-all duration-300"
+    className="group rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-2xl shadow-gray-100 dark:shadow-white/10 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#C8102E]/10 transition-all duration-300"
   >
     {/* Product preview */}
     <div className="relative h-56 sm:h-60 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/10 via-white to-[#5044E5]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#5044E5]/15" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/10 via-white to-[#C8102E]/10 dark:from-[#147AFF]/15 dark:via-gray-900 dark:to-[#C8102E]/15" />
       <div className="absolute inset-0 bg-grid opacity-60 dark:opacity-40" />
-      <span className="absolute -top-12 -right-12 w-36 h-36 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#5044E5]/25 blur-2xl" />
+      <span className="absolute -top-12 -right-12 w-36 h-36 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#C8102E]/25 blur-2xl" />
       <span className="absolute -bottom-14 -left-10 w-32 h-32 rounded-full bg-[#4d8cea]/20 blur-2xl" />
       <div className="relative h-full p-4 sm:p-5">
         <UIMockup

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const PageHeader = ({ eyebrow, title, desc }) => (
   <section className="relative overflow-hidden text-center pt-16 sm:pt-24 pb-10 px-4 sm:px-12 lg:px-24 xl:px-40">
     <div className="absolute inset-0 bg-grid" />
-    <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[46rem] h-[26rem] rounded-full bg-[#5044E5]/15 blur-3xl" />
+    <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[46rem] h-[26rem] rounded-full bg-[#C8102E]/15 blur-3xl" />
     <div className="absolute -top-16 right-[10%] w-64 h-64 rounded-full bg-[#4d8cea]/20 blur-3xl" />
     <div className="absolute top-10 -left-20 w-72 h-72 rounded-full bg-[#147AFF]/15 blur-3xl" />
     <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[36rem] h-64 rounded-full bg-[#38bdf8]/10 blur-3xl" />
@@ -15,7 +15,7 @@ const PageHeader = ({ eyebrow, title, desc }) => (
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-[#5044E5] dark:text-[#4d8cea] bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 rounded-full"
+          className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-[#C8102E] dark:text-[#4d8cea] bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 rounded-full"
         >
           {eyebrow}
         </motion.span>

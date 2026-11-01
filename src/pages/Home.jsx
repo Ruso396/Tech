@@ -15,7 +15,7 @@ import { servicePreview } from "../data/content";
 const Hero = () => (
   <section className="relative flex flex-col items-center gap-6 pt-12 sm:pt-20 pb-10 sm:pb-16 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white">
     {/* Subtle reference-style glow: small top-right blob only (dark:hidden like the reference site) */}
-    <div className="absolute -top-40 -right-40 sm:-top-100 sm:-right-70 w-[26rem] h-[26rem] rounded-full bg-[#5044E5]/20 blur-3xl dark:hidden pointer-events-none" />
+    <div className="absolute -top-40 -right-40 sm:-top-100 sm:-right-70 w-[26rem] h-[26rem] rounded-full bg-[#C8102E]/20 blur-3xl dark:hidden pointer-events-none" />
 
     <div className="relative z-10 flex flex-col items-center gap-6">
       <motion.span
@@ -24,7 +24,7 @@ const Hero = () => (
         transition={{ duration: 0.5, delay: 0.7 }}
         className="inline-flex items-center justify-center gap-2 border border-gray-300 dark:border-gray-600 p-1.5 pr-4 rounded-full max-w-full flex-wrap"
       >
-        <span className="size-5 rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5]" />
+        <span className="size-5 rounded-full bg-gradient-to-br from-[#800020] to-[#C8102E]" />
         <p className="text-xs font-medium">Design • Development • Technology • Growth</p>
       </motion.span>
 
@@ -35,7 +35,7 @@ const Hero = () => (
         className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl tracking-tight"
       >
         We Build Digital Solutions That Move{" "}
-        <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
           Your Business
         </span>{" "}
         Forward.
@@ -79,7 +79,7 @@ const Hero = () => (
         transition={{ duration: 0.6, delay: 1.6 }}
         className="relative w-full"
       >
-        <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-3xl border border-gray-200/70 dark:border-gray-800 shadow-2xl shadow-[#5044E5]/15">
+        <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-3xl border border-gray-200/70 dark:border-gray-800 shadow-2xl shadow-[#C8102E]/15">
           <img
             src="https://agencyai-01.netlify.app/assets/hero_img-ySDs5NA2.png"
             alt="RUHA Tech digital solutions hero banner"
@@ -97,7 +97,7 @@ const Hero = () => (
 const FounderSection = () => (
   <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 pt-8 sm:pt-12 pb-12 sm:pb-16 text-gray-700 dark:text-white">
     <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#147AFF]/10 blur-3xl" />
-    <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#5044E5]/10 blur-3xl" />
+    <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#C8102E]/10 blur-3xl" />
 
     <div className="relative z-10 grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
       <motion.div
@@ -107,8 +107,8 @@ const FounderSection = () => (
         viewport={{ once: true }}
         className="relative mx-auto w-full max-w-md lg:max-w-none"
       >
-        <div className="absolute -top-8 -right-8 w-56 h-56 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#5044E5]/25 blur-3xl" />
-        <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#5044E5]/15 backdrop-blur">
+        <div className="absolute -top-8 -right-8 w-56 h-56 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#C8102E]/25 blur-3xl" />
+        <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#C8102E]/15 backdrop-blur">
           <img
             src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1790058917/5ea034aa4cd1a61e2a55688c18d7e2b6313b73d6d4bc746a015afc60077f9dee_nlehkg.png"
             alt="Kalam Ruso K — Founder & CEO of RUHA Tech"
@@ -125,14 +125,14 @@ const FounderSection = () => (
         transition={{ duration: 0.7, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[#5044E5] dark:text-[#4d8cea]">
-          <span className="size-2 rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5]" />
+        <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[#C8102E] dark:text-[#4d8cea]">
+          <span className="size-2 rounded-full bg-gradient-to-br from-[#800020] to-[#C8102E]" />
           Founder & CEO
         </span>
 
         <h2 className="mt-5 text-3xl sm:text-4xl xl:text-5xl font-medium leading-tight tracking-tight text-gray-900 dark:text-white">
           Meet the{" "}
-          <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
             Founder
           </span>
         </h2>
@@ -164,7 +164,7 @@ const FounderSection = () => (
 /* ---------- Head of Marketing ---------- */
 const HeadOfMarketingSection = () => (
   <section className="relative overflow-hidden px-4 sm:px-12 lg:px-24 xl:px-40 pt-8 sm:pt-12 pb-12 sm:pb-16 text-gray-700 dark:text-white">
-    <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#5044E5]/10 blur-3xl" />
+    <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#C8102E]/10 blur-3xl" />
     <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#147AFF]/10 blur-3xl" />
 
     <div className="relative z-10 grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -175,8 +175,8 @@ const HeadOfMarketingSection = () => (
         viewport={{ once: true }}
         className="relative mx-auto w-full max-w-[240px] sm:max-w-[300px] md:max-w-xs lg:max-w-none"
       >
-        <div className="absolute -top-6 -right-6 w-36 h-36 rounded-full bg-gradient-to-br from-[#5044E5]/25 to-[#4d8cea]/25 blur-3xl sm:-top-8 sm:-right-8 sm:w-56 sm:h-56" />
-        <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#5044E5]/15 backdrop-blur">
+        <div className="absolute -top-6 -right-6 w-36 h-36 rounded-full bg-gradient-to-br from-[#C8102E]/25 to-[#4d8cea]/25 blur-3xl sm:-top-8 sm:-right-8 sm:w-56 sm:h-56" />
+        <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#C8102E]/15 backdrop-blur">
           <img
             src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1789728905/ChatGPT_Image_Sep_18_2026_04_24_08_PM_fnftdy.png"
             alt="Arul Sundar — Head of Marketing at RUHA Tech"
@@ -193,14 +193,14 @@ const HeadOfMarketingSection = () => (
         transition={{ duration: 0.7, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[#5044E5] dark:text-[#4d8cea]">
-          <span className="size-2 rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5]" />
+        <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[#C8102E] dark:text-[#4d8cea]">
+          <span className="size-2 rounded-full bg-gradient-to-br from-[#800020] to-[#C8102E]" />
           Head of Marketing
         </span>
 
         <h2 className="mt-5 text-3xl sm:text-4xl xl:text-5xl font-medium leading-tight tracking-tight text-gray-900 dark:text-white">
           Meet Our{" "}
-          <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
             Marketing Head
           </span>
         </h2>

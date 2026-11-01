@@ -86,10 +86,10 @@ const MarketingCard = ({ service, index = 0 }) => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
     viewport={{ once: true }}
-    className="group rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#5044E5]/10 transition-all duration-300"
+    className="group rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#C8102E]/10 transition-all duration-300"
   >
     <div className="relative h-48 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/15 via-transparent to-[#5044E5]/15 opacity-70" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/15 via-transparent to-[#C8102E]/15 opacity-70" />
       <img
         src={service.image}
         alt={service.title}
@@ -100,7 +100,7 @@ const MarketingCard = ({ service, index = 0 }) => (
     </div>
     <div className="p-5 sm:p-6">
       <div className="flex items-center gap-3">
-        <span className="size-10 shrink-0 rounded-xl bg-gradient-to-br from-[#147AFF] to-[#5044E5] text-white flex items-center justify-center shadow-lg shadow-[#5044E5]/25">
+        <span className="size-10 shrink-0 rounded-xl bg-gradient-to-br from-[#800020] to-[#C8102E] text-white flex items-center justify-center shadow-lg shadow-[#C8102E]/25">
           <Icon id={service.icon} className="w-5 h-5" />
         </span>
         <h3 className="font-bold text-lg text-gray-900 dark:text-white">{service.title}</h3>
@@ -123,7 +123,7 @@ const DigitalMarketing = () => {
         title={
           <>
             Build Your Product. Grow Your{" "}
-            <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
               Digital Presence.
             </span>
           </>
@@ -171,7 +171,7 @@ const DigitalMarketing = () => {
           className="max-w-6xl mx-auto rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center gap-6 justify-between"
         >
           <div className="flex gap-4 items-start">
-            <span className="size-11 shrink-0 rounded-xl bg-gradient-to-br from-[#5044E5] to-[#4d8cea] text-white flex items-center justify-center">
+            <span className="size-11 shrink-0 rounded-xl bg-gradient-to-br from-[#800020] to-[#C8102E] text-white flex items-center justify-center">
               <Icon id="rocket" className="w-6 h-6" />
             </span>
             <div>

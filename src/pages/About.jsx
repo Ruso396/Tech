@@ -32,7 +32,7 @@ const About = () => {
         title={
           <>
             We Build Technology With{" "}
-            <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
               Purpose.
             </span>
           </>
@@ -87,7 +87,7 @@ const About = () => {
             className="grid grid-cols-2 gap-4"
           >
             <div className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 shadow-xl shadow-gray-100 dark:shadow-white/5">
-              <span className="size-11 rounded-xl bg-gradient-to-br from-[#147AFF] to-[#5044E5] text-white flex items-center justify-center mb-4">
+              <span className="size-11 rounded-xl bg-gradient-to-br from-[#800020] to-[#C8102E] text-white flex items-center justify-center mb-4">
                 <Icon id="target" className="w-6 h-6" />
               </span>
               <h4 className="font-bold text-gray-900 dark:text-white">Our Mission</h4>
@@ -96,7 +96,7 @@ const About = () => {
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 shadow-xl shadow-gray-100 dark:shadow-white/5">
-              <span className="size-11 rounded-xl bg-gradient-to-br from-[#5044E5] to-[#4d8cea] text-white flex items-center justify-center mb-4">
+              <span className="size-11 rounded-xl bg-gradient-to-br from-[#800020] to-[#C8102E] text-white flex items-center justify-center mb-4">
                 <Icon id="eye" className="w-6 h-6" />
               </span>
               <h4 className="font-bold text-gray-900 dark:text-white">Our Vision</h4>
@@ -146,7 +146,7 @@ const About = () => {
               key={item.title}
               className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
             >
-              <span className="size-11 rounded-xl bg-gradient-to-br from-[#147AFF]/15 to-[#5044E5]/15 text-primary flex items-center justify-center mb-4">
+              <span className="size-11 rounded-xl bg-gradient-to-br from-[#147AFF]/15 to-[#C8102E]/15 text-primary flex items-center justify-center mb-4">
                 <Icon id={item.icon} className="w-6 h-6" />
               </span>
               <h4 className="font-bold text-gray-900 dark:text-white">{item.title}</h4>

@@ -18,7 +18,7 @@ const StatCard = ({ label, value, delta, bar }) => (
     <p className="text-[9px] font-medium text-gray-400">{label}</p>
     <p className="text-sm font-bold text-gray-900 mt-0.5">{value}</p>
     {bar ? (
-      <span className="inline-block mt-1 rounded-full bg-gradient-to-r from-[#147AFF]/50 to-[#5044E5]/50 h-1 w-12" />
+      <span className="inline-block mt-1 rounded-full bg-gradient-to-r from-[#147AFF]/50 to-[#C8102E]/50 h-1 w-12" />
     ) : (
       <span className="inline-block mt-1 text-[9px] font-semibold text-emerald-600 bg-emerald-500/10 px-1 rounded-full">
         {delta}
@@ -34,8 +34,8 @@ const MiniBars = ({ values, className = "h-16" }) => (
         key={i}
         className={`flex-1 rounded-sm ${
           i === values.length - 1
-            ? "bg-gradient-to-t from-[#5044E5] to-[#4d8cea]"
-            : "bg-gradient-to-t from-[#147AFF]/25 to-[#5044E5]/25"
+            ? "bg-gradient-to-t from-[#800020] to-[#C8102E]"
+            : "bg-gradient-to-t from-[#147AFF]/25 to-[#C8102E]/25"
         }`}
         style={{ height: `${v}%` }}
       />
@@ -47,14 +47,14 @@ const Panel = ({ title, right, children, className = "" }) => (
   <div className={`rounded-lg border border-gray-100 bg-white p-3 shadow-sm ${className}`}>
     <div className="flex items-center justify-between mb-2.5">
       <p className="text-[9px] font-semibold text-gray-700">{title}</p>
-      {right && <span className="text-[8px] font-semibold text-[#5044E5]">{right}</span>}
+      {right && <span className="text-[8px] font-semibold text-[#C8102E]">{right}</span>}
     </div>
     {children}
   </div>
 );
 
 const Window = ({ label, children, className = "" }) => (
-  <div className={`relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl shadow-[#5044E5]/10 dark:shadow-black/40 ${className}`}>
+  <div className={`relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl shadow-[#C8102E]/10 dark:shadow-black/40 ${className}`}>
     <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-gray-100 bg-gray-50/70">
       <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
       <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
@@ -119,7 +119,7 @@ const BillingScene = () => (
 const EcommerceScene = () => (
   <>
     <div className="flex items-center gap-2 mb-2.5">
-      <span className="size-4 rounded-md bg-gradient-to-br from-[#147AFF] to-[#5044E5]" />
+      <span className="size-4 rounded-md bg-gradient-to-br from-[#800020] to-[#C8102E]" />
       <Bar w="w-20" h="h-1.5" c="bg-gray-200" />
       <span className="ml-auto flex items-center gap-1 text-[8px] font-semibold text-gray-500">
         <Icon id="cart" className="w-3 h-3" /> Orders
@@ -139,12 +139,12 @@ const EcommerceScene = () => (
         { icon: "card", name: "Bamboo Set", price: "₹89" },
       ].map((p) => (
         <div key={p.name} className="rounded-lg border border-gray-100 bg-white p-2 shadow-sm flex flex-col">
-          <span className="h-10 rounded-md bg-gradient-to-br from-[#147AFF]/15 to-[#5044E5]/15 flex items-center justify-center text-[#5044E5]">
+          <span className="h-10 rounded-md bg-gradient-to-br from-[#147AFF]/15 to-[#C8102E]/15 flex items-center justify-center text-[#C8102E]">
             <Icon id={p.icon} className="w-4 h-4" />
           </span>
           <p className="text-[8px] font-semibold text-gray-700 mt-1.5 truncate">{p.name}</p>
-          <p className="text-[9px] font-bold text-[#5044E5]">{p.price}</p>
-          <span className="mt-auto rounded-md bg-gradient-to-r from-[#147AFF] to-[#5044E5] text-white text-[7px] font-semibold text-center py-1">
+          <p className="text-[9px] font-bold text-[#C8102E]">{p.price}</p>
+          <span className="mt-auto rounded-md bg-gradient-to-r from-[#800020] to-[#C8102E] text-white text-[7px] font-semibold text-center py-1">
             Add to Cart
           </span>
         </div>
@@ -161,7 +161,7 @@ const ClinicScene = () => (
           key={d}
           className={`flex-1 rounded-md border py-1.5 text-center ${
             i === 3
-              ? "border-transparent bg-gradient-to-br from-[#147AFF] to-[#5044E5] text-white"
+              ? "border-transparent bg-gradient-to-br from-[#800020] to-[#C8102E] text-white"
               : "border-gray-100 bg-white text-gray-400"
           }`}
         >
@@ -181,8 +181,8 @@ const ClinicScene = () => (
           { slot: "15:30", name: "Dr. Nusrat", c: "bg-amber-500/15 text-amber-600" },
         ].map((a) => (
           <div key={a.name} className="flex items-center gap-2 rounded-lg border border-gray-100 bg-white p-2 shadow-sm">
-            <span className="size-5 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#5044E5]/25 flex items-center justify-center">
-              <Icon id="users" className="w-3 h-3 text-[#5044E5]" />
+            <span className="size-5 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#C8102E]/25 flex items-center justify-center">
+              <Icon id="users" className="w-3 h-3 text-[#C8102E]" />
             </span>
             <div className="min-w-0 flex-1">
               <p className="text-[8px] font-semibold text-gray-700 truncate">{a.name}</p>
@@ -224,7 +224,7 @@ const AnalyticsScene = () => (
         </div>
         <div className="flex items-center justify-between mt-2">
           <Bar w="w-16" h="h-wide" c="bg-gray-200" />
-          <Chip c="bg-[#5044E5]/10 text-[#5044E5]">+146% YOY</Chip>
+          <Chip c="bg-[#C8102E]/10 text-[#C8102E]">+146% YOY</Chip>
         </div>
       </Panel>
       <div className="sm:col-span-2 flex flex-col gap-2 min-h-0">
@@ -238,7 +238,7 @@ const AnalyticsScene = () => (
             <div key={s.label} className="flex items-center gap-2 py-1">
               <span className="text-[8px] text-gray-400 w-14">{s.label}</span>
               <span className="flex-1 h-1 rounded-full bg-gray-100">
-                <span className={`block h-1 rounded-full bg-gradient-to-r from-[#147AFF] to-[#5044E5] ${s.w}`} />
+                <span className={`block h-1 rounded-full bg-gradient-to-r from-[#800020] to-[#C8102E] ${s.w}`} />
               </span>
               <span className="text-[8px] font-bold text-gray-700">{s.v}</span>
             </div>
@@ -259,15 +259,15 @@ const ArchitectureScene = () => (
           <p className="text-[7px] text-gray-400">React · Next.js</p>
         </div>
       </div>
-      <span className="hidden sm:block text-[10px] text-[#5044E5]">⇄</span>
+      <span className="hidden sm:block text-[10px] text-[#C8102E]">⇄</span>
       <div className="flex items-center gap-1.5 rounded-lg border border-gray-100 bg-white px-2.5 py-2 shadow-sm">
-        <Icon id="server" className="w-3.5 h-3.5 text-[#5044E5]" />
+        <Icon id="server" className="w-3.5 h-3.5 text-[#C8102E]" />
         <div>
           <p className="text-[8px] font-semibold text-gray-700">Backend</p>
           <p className="text-[7px] text-gray-400">Node · APIs</p>
         </div>
       </div>
-      <span className="hidden sm:block text-[10px] text-[#5044E5]">⇄</span>
+      <span className="hidden sm:block text-[10px] text-[#C8102E]">⇄</span>
       <div className="flex items-center gap-1.5 rounded-lg border border-gray-100 bg-white px-2.5 py-2 shadow-sm">
         <Icon id="database" className="w-3.5 h-3.5 text-[#147AFF]" />
         <div>
@@ -277,7 +277,7 @@ const ArchitectureScene = () => (
       </div>
     </div>
     <div className="w-full rounded-lg border border-gray-100 bg-gray-50 p-2 flex items-center gap-2">
-      <span className="rounded-md bg-gradient-to-r from-[#147AFF] to-[#5044E5] text-white text-[7px] font-semibold px-1.5 py-0.5">
+      <span className="rounded-md bg-gradient-to-r from-[#800020] to-[#C8102E] text-white text-[7px] font-semibold px-1.5 py-0.5">
         BUILD
       </span>
       <Bar w="w-6" h="h-1" c="bg-gray-200" />
@@ -308,11 +308,11 @@ const MobileScene = () => (
         }`}
       >
         <span className="mx-auto block w-4 h-1 rounded-full bg-gray-200 mb-1.5" />
-        <span className="block h-10 sm:h-12 rounded-lg bg-gradient-to-br from-[#147AFF]/15 to-[#5044E5]/20 flex items-center justify-center text-[#5044E5]">
+        <span className="block h-10 sm:h-12 rounded-lg bg-gradient-to-br from-[#147AFF]/15 to-[#C8102E]/20 flex items-center justify-center text-[#C8102E]">
           <Icon id={app.icon} className="w-4 h-4" />
         </span>
         <p className="text-center text-[7px] font-semibold text-gray-700 mt-1.5">{app.label}</p>
-        <span className="mt-1 block h-1 rounded-full bg-gradient-to-r from-[#147AFF] to-[#5044E5]" />
+        <span className="mt-1 block h-1 rounded-full bg-gradient-to-r from-[#800020] to-[#C8102E]" />
       </div>
     ))}
   </div>
@@ -335,7 +335,7 @@ const ApiScene = () => (
       <div className="rounded-lg border border-gray-100 bg-gray-50 p-2">
         <p className="text-[8px] text-gray-400 mb-1">Auth</p>
         <div className="flex items-center gap-2">
-          <span className="rounded-md bg-gradient-to-r from-[#147AFF] to-[#5044E5] text-white text-[7px] font-semibold px-1.5 py-0.5">
+          <span className="rounded-md bg-gradient-to-r from-[#800020] to-[#C8102E] text-white text-[7px] font-semibold px-1.5 py-0.5">
             JWT
           </span>
           <Bar w="w-10" h="h-1" c="bg-gray-200" />
@@ -353,7 +353,7 @@ const ApiScene = () => (
       <p className="text-yellow-300"> 223,</p>
       <p className="text-gray-500">"customer":</p>
       <p className="text-indigo-300"> {`{ id, name }`}</p>
-      <span className="inline-block mt-1 rounded bg-[#5044E5] px-1.5 py-0.5 text-white">200 ✓</span>
+      <span className="inline-block mt-1 rounded bg-[#C8102E] px-1.5 py-0.5 text-white">200 ✓</span>
     </div>
   </div>
 );
@@ -367,7 +367,7 @@ const CloudScene = () => (
         { icon: "cloud", label: "CDN" },
       ].map((n) => (
         <div key={n.label} className="rounded-lg border border-gray-100 bg-white p-2.5 shadow-sm text-center">
-          <span className="size-6 mx-auto rounded-md bg-gradient-to-br from-[#147AFF]/15 to-[#5044E5]/15 flex items-center justify-center text-[#5044E5]">
+          <span className="size-6 mx-auto rounded-md bg-gradient-to-br from-[#147AFF]/15 to-[#C8102E]/15 flex items-center justify-center text-[#C8102E]">
             <Icon id={n.icon} className="w-3.5 h-3.5" />
           </span>
           <p className="text-[8px] font-semibold text-gray-700 mt-1.5">{n.label}</p>
@@ -398,7 +398,7 @@ const CloudScene = () => (
 const DesignScene = () => (
   <>
     <div className="grid grid-cols-5 gap-2 mb-2.5">
-      {["#147AFF", "#5044E5", "#4d8cea", "#38bdf8", "#0f172a"].map((c) => (
+      {["#147AFF", "#C8102E", "#4d8cea", "#38bdf8", "#0f172a"].map((c) => (
         <div key={c} className="flex flex-col items-center gap-1">
           <span className="w-full h-7 rounded-md border border-black/5" style={{ background: c }} />
           <span className="w-8 h-1 rounded-full bg-gray-200" />
@@ -413,12 +413,12 @@ const DesignScene = () => (
             <Bar w="w-full" h="h-1" c="bg-gray-200" />
             <Bar w="w-4/5" h="h-1" c="bg-gray-200" />
           </div>
-          <span className="inline-block mt-1.5 rounded-md bg-gradient-to-r from-[#147AFF] to-[#5044E5] text-white text-[7px] font-semibold px-2 py-0.5">
+          <span className="inline-block mt-1.5 rounded-md bg-gradient-to-r from-[#800020] to-[#C8102E] text-white text-[7px] font-semibold px-2 py-0.5">
             CTA
           </span>
         </div>
         <div className="rounded-lg border border-gray-100 bg-white p-2 shadow-sm flex items-center gap-1.5">
-          <span className="size-5 rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5]" />
+          <span className="size-5 rounded-full bg-gradient-to-br from-[#800020] to-[#C8102E]" />
           <div>
             <Bar w="w-10" h="h-1.5" c="bg-gray-600" />
             <Bar w="w-14" h="h-1" c="bg-gray-200" />
@@ -431,7 +431,7 @@ const DesignScene = () => (
         <div className="space-y-1">
           <Bar w="w-full" h="h-1.5" c="bg-gray-300" />
           <Bar w="w-3/4" h="h-1" c="bg-gray-200" />
-          <span className="block h-1 w-1/2 rounded-full bg-gradient-to-r from-[#147AFF] to-[#5044E5]" />
+          <span className="block h-1 w-1/2 rounded-full bg-gradient-to-r from-[#800020] to-[#C8102E]" />
         </div>
       </div>
     </div>
@@ -445,7 +445,7 @@ const DataScene = () => (
         <span
           key={t}
           className={`rounded-md px-2 py-1 text-[8px] font-semibold ${
-            i === 2 ? "bg-gradient-to-r from-[#147AFF] to-[#5044E5] text-white" : "bg-gray-100 text-gray-500"
+            i === 2 ? "bg-gradient-to-r from-[#800020] to-[#C8102E] text-white" : "bg-gray-100 text-gray-500"
           }`}
         >
           {t}
@@ -494,10 +494,10 @@ const EditorScene = () => (
         <Bar w="w-full" h="h-1" c="bg-gray-200" />
         <Bar w="w-11/12" h="h-1" c="bg-gray-200" />
         <Bar w="w-5/6" h="h-1" c="bg-gray-200" />
-        <span className="block h-1 w-2/3 rounded-full bg-[#5044E5]/40" />
+        <span className="block h-1 w-2/3 rounded-full bg-[#C8102E]/40" />
       </div>
       <div className="mt-2.5 flex items-center gap-2 pt-2 border-t border-dashed border-gray-100">
-        <span className="size-4 rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5]" />
+        <span className="size-4 rounded-full bg-gradient-to-br from-[#800020] to-[#C8102E]" />
         <span className="size-4 rounded-full bg-[#38bdf8]" />
         <Bar w="w-10" h="h-1" c="bg-gray-200" />
         <span className="ml-auto text-[8px] text-gray-400">3 collaborators online</span>
@@ -525,7 +525,7 @@ const BusinessScene = () => (
           <div key={s.label} className="flex items-center gap-2 py-1">
             <span className="text-[8px] text-gray-400 w-16">{s.label}</span>
             <span className="flex-1 h-1.5 rounded-full bg-gray-100">
-              <span className={`block h-1.5 rounded-full bg-gradient-to-r from-[#147AFF] to-[#5044E5] ${s.w}`} />
+              <span className={`block h-1.5 rounded-full bg-gradient-to-r from-[#800020] to-[#C8102E] ${s.w}`} />
             </span>
             <span className="text-[8px] font-bold text-gray-700">{s.v}</span>
           </div>
@@ -541,7 +541,7 @@ const BusinessScene = () => (
           ].map((o) => (
             <div key={o.label} className="flex items-center justify-between rounded-md bg-gray-50 px-2 py-1.5">
               <span className="text-[8px] text-gray-500">{o.label}</span>
-              <span className="text-[8px] font-bold text-[#5044E5]">{o.v}</span>
+              <span className="text-[8px] font-bold text-[#C8102E]">{o.v}</span>
             </div>
           ))}
         </div>
@@ -569,7 +569,7 @@ const SaaSScene = () => (
           <div key={p.label} className="flex items-center gap-2 py-0.5">
             <span className="text-[8px] text-gray-400 w-14">{p.label}</span>
             <span className="flex-1 h-1.5 rounded-full bg-gray-100">
-              <span className={`block h-1.5 rounded-full bg-gradient-to-r from-[#147AFF] to-[#5044E5] ${p.w}`} />
+              <span className={`block h-1.5 rounded-full bg-gradient-to-r from-[#800020] to-[#C8102E] ${p.w}`} />
             </span>
             <span className="text-[8px] font-bold text-gray-700">{p.v}</span>
           </div>

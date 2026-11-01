@@ -18,7 +18,7 @@ const Services = () => {
         title={
           <>
             Our{" "}
-            <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
               Technology
             </span>{" "}
             Services

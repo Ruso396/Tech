@@ -49,7 +49,7 @@ const MobileMenu = ({ open, onClose }) => {
               <Link
                 to="/contact"
                 onClick={onClose}
-                className="w-full flex items-center justify-center gap-2 bg-white text-[#5044E5] text-sm px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg transition-all font-semibold"
+                className="w-full flex items-center justify-center gap-2 bg-white text-[#C8102E] text-sm px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg transition-all font-semibold"
               >
                 {CTAs.startProject}
                 <Icon id="arrow" className="w-4 h-4" />

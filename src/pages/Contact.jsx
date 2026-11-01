@@ -46,7 +46,7 @@ const Contact = () => {
         title={
           <>
             Let's Build Something{" "}
-            <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
               Great Together.
             </span>
           </>
@@ -76,7 +76,7 @@ const Contact = () => {
             {contactItems.map((item) => {
               const inner = (
                 <>
-                  <span className="size-11 rounded-xl bg-gradient-to-br from-[#147AFF]/15 to-[#5044E5]/15 text-primary flex items-center justify-center mb-4 shrink-0">
+                  <span className="size-11 rounded-xl bg-gradient-to-br from-[#147AFF]/15 to-[#C8102E]/15 text-primary flex items-center justify-center mb-4 shrink-0">
                     <Icon id={item.icon} className="w-5 h-5" />
                   </span>
                   <div>
@@ -102,14 +102,14 @@ const Contact = () => {
               );
             })}
 
-            <div className="rounded-2xl bg-gradient-to-br from-[#147AFF] via-[#5044E5] to-[#4d8cea] p-6 text-white shadow-xl shadow-[#5044E5]/25">
+            <div className="rounded-2xl bg-gradient-to-br from-[#147AFF] via-[#800020] to-[#C8102E] p-6 text-white shadow-xl shadow-[#C8102E]/25">
               <h3 className="font-bold">Prefer to start simple?</h3>
               <p className="text-sm text-white/85 mt-1.5">
                 Send us one line about your idea and we'll reply with a few quick questions.
               </p>
               <a
                 href={`mailto:${BRAND.email}?subject=Project%20Enquiry%20—%20RUHA%20Tech`}
-                className="mt-5 inline-flex items-center gap-2 bg-white text-[#5044E5] font-semibold text-sm px-6 py-2.5 rounded-full hover:scale-105 transition-all"
+                className="mt-5 inline-flex items-center gap-2 bg-white text-[#C8102E] font-semibold text-sm px-6 py-2.5 rounded-full hover:scale-105 transition-all"
               >
                 {BRAND.email}
               </a>

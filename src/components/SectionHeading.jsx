@@ -6,7 +6,7 @@ const SectionHeading = ({ eyebrow, title, desc, align = "center", className = ""
   return (
     <div className={`flex flex-col ${alignClass} gap-3 ${className}`}>
       {eyebrow && (
-        <span className="text-[11px] font-semibold uppercase tracking-widest text-[#5044E5] dark:text-[#4d8cea] bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 rounded-full">
+        <span className="text-[11px] font-semibold uppercase tracking-widest text-[#C8102E] dark:text-[#4d8cea] bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 rounded-full">
           {eyebrow}
         </span>
       )}

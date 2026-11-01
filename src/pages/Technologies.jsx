@@ -215,9 +215,9 @@ const ArchitectureVisual = () => (
     aria-label="Technology architecture overview"
   >
     <div className="absolute -top-14 -right-10 h-64 w-64 rounded-full bg-[#147AFF]/20 blur-3xl" />
-    <div className="absolute -bottom-16 -left-10 h-64 w-64 rounded-full bg-[#5044E5]/20 blur-3xl" />
+    <div className="absolute -bottom-16 -left-10 h-64 w-64 rounded-full bg-[#C8102E]/20 blur-3xl" />
 
-    <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-4 shadow-2xl shadow-[#5044E5]/10 backdrop-blur sm:p-6">
+    <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-4 shadow-2xl shadow-[#C8102E]/10 backdrop-blur sm:p-6">
       <div className="flex items-center justify-between border-b border-gray-100 dark:border-gray-800 pb-4">
         <div className="flex items-center gap-2">
           <span className="size-2.5 rounded-full bg-[#FF5F57]" />
@@ -233,7 +233,7 @@ const ArchitectureVisual = () => (
         {architectureLayers.map((layer) => (
           <div
             key={layer.title}
-            className="flex items-center gap-3.5 rounded-xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/60 px-3.5 py-3 transition-colors hover:border-[#5044E5]/25 hover:bg-white dark:hover:bg-gray-800"
+            className="flex items-center gap-3.5 rounded-xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/60 px-3.5 py-3 transition-colors hover:border-[#C8102E]/25 hover:bg-white dark:hover:bg-gray-800"
           >
             <span
               className="flex size-9 shrink-0 items-center justify-center rounded-lg"
@@ -249,7 +249,7 @@ const ArchitectureVisual = () => (
             </div>
             <Icon
               id="arrow"
-              className="ml-auto w-3.5 h-3.5 shrink-0 text-[#5044E5]"
+              className="ml-auto w-3.5 h-3.5 shrink-0 text-[#C8102E]"
             />
           </div>
         ))}
@@ -263,7 +263,7 @@ const ArchitectureVisual = () => (
           >
             <span
               className="size-4 flex items-center justify-center"
-              style={{ color: techColors[tech] || "#5044E5" }}
+              style={{ color: techColors[tech] || "#C8102E" }}
             >
               {techLogos[tech]}
             </span>
@@ -280,7 +280,7 @@ const ArchitectureVisual = () => (
       className="absolute -left-4 top-16 hidden rounded-xl border border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-900 p-3 shadow-xl shadow-gray-200/50 dark:shadow-black/20 md:block"
     >
       <div className="flex items-center gap-2.5">
-        <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#147AFF] to-[#5044E5] text-white">
+        <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#800020] to-[#C8102E] text-white">
           <Icon id="zap" className="w-4 h-4" />
         </span>
         <div>
@@ -297,7 +297,7 @@ const ArchitectureVisual = () => (
       className="absolute -right-3 bottom-16 hidden rounded-xl border border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-900 p-3 shadow-xl shadow-gray-200/50 dark:shadow-black/20 md:block"
     >
       <div className="flex items-center gap-2.5">
-        <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#5044E5] to-[#4d8cea] text-white">
+        <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#800020] to-[#C8102E] text-white">
           <Icon id="check" className="w-4 h-4" />
         </span>
         <div>
@@ -312,7 +312,7 @@ const ArchitectureVisual = () => (
 // New Tech Card Component with official logos
 const TechCard = ({ techKey, index }) => {
   const logo = techLogos[techKey];
-  const color = techColors[techKey] || "#5044E5";
+  const color = techColors[techKey] || "#C8102E";
   const name = techKey === "nextjs" ? "Next.js"
     : techKey === "reactnative" ? "React Native"
     : techKey === "node" ? "Node.js"
@@ -335,7 +335,7 @@ const TechCard = ({ techKey, index }) => {
       transition={{ duration: 0.35, delay: 0.04 * index }}
       viewport={{ once: true }}
       whileHover={{ y: -4, scale: 1.03 }}
-      className="group/card relative flex items-center gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3.5 py-3 shadow-sm transition-all duration-300 hover:border-[#5044E5]/30 hover:shadow-lg hover:shadow-[#5044E5]/10"
+      className="group/card relative flex items-center gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3.5 py-3 shadow-sm transition-all duration-300 hover:border-[#C8102E]/30 hover:shadow-lg hover:shadow-[#C8102E]/10"
     >
       <span
         className="flex size-9 shrink-0 items-center justify-center rounded-lg transition-transform duration-300 group-hover/card:scale-110"
@@ -366,7 +366,7 @@ const Technologies = () => {
     <div className="overflow-x-clip bg-white dark:bg-gray-950">
       <section className={`relative overflow-hidden ${container} pt-16 sm:pt-24 pb-16 sm:pb-24`}>
         <div className="absolute inset-0 bg-grid" />
-        <div className="absolute -top-32 left-1/2 h-72 w-[46rem] -translate-x-1/2 rounded-full bg-[#5044E5]/15 blur-3xl" />
+        <div className="absolute -top-32 left-1/2 h-72 w-[46rem] -translate-x-1/2 rounded-full bg-[#C8102E]/15 blur-3xl" />
         <div className="absolute top-16 right-[5%] h-72 w-72 rounded-full bg-[#4d8cea]/20 blur-3xl" />
         <div className="absolute bottom-0 left-[5%] h-72 w-72 rounded-full bg-[#147AFF]/15 blur-3xl" />
 
@@ -378,13 +378,13 @@ const Technologies = () => {
             className="max-w-3xl"
           >
             <span className="inline-flex items-center gap-2.5 rounded-full border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 shadow-sm backdrop-blur">
-              <span className="size-2 rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5]" />
+              <span className="size-2 rounded-full bg-gradient-to-br from-[#800020] to-[#C8102E]" />
               Engineering · Product · Growth
             </span>
 
             <h1 className="mt-7 text-4xl sm:text-5xl xl:text-6xl font-medium leading-[1.08] tracking-tight text-gray-900 dark:text-white">
               Technology that turns{" "}
-              <span className="bg-gradient-to-r from-[#147AFF] via-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#147AFF] via-[#800020] to-[#C8102E] bg-clip-text text-transparent">
                 ideas into products.
               </span>
             </h1>
@@ -404,7 +404,7 @@ const Technologies = () => {
               </Link>
               <Link
                 to="/services"
-                className="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 px-6 py-3.5 text-sm font-semibold text-gray-800 dark:text-white transition-all hover:scale-105 hover:border-[#5044E5]/40 hover:shadow-lg dark:hover:bg-gray-900"
+                className="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 px-6 py-3.5 text-sm font-semibold text-gray-800 dark:text-white transition-all hover:scale-105 hover:border-[#C8102E]/40 hover:shadow-lg dark:hover:bg-gray-900"
               >
                 Explore services
               </Link>
@@ -459,12 +459,12 @@ const Technologies = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[#5044E5] dark:text-[#4d8cea]">
+              <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 dark:bg-primary/20 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[#C8102E] dark:text-[#4d8cea]">
                 Stack overview
               </span>
               <h2 className="mt-5 text-3xl sm:text-4xl xl:text-5xl font-medium leading-tight tracking-tight text-gray-900 dark:text-white">
                 One team.{" "}
-                <span className="bg-gradient-to-r from-[#147AFF] to-[#5044E5] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
                   Every layer.
                 </span>
               </h2>
@@ -475,7 +475,7 @@ const Technologies = () => {
             </div>
 
             <div className="inline-flex max-w-xs items-start gap-3 rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-4">
-              <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5] text-white">
+              <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#800020] to-[#C8102E] text-white">
                 <Icon id="target" className="w-4 h-4" />
               </span>
               <p className="text-xs font-semibold leading-relaxed text-gray-700 dark:text-white/85">
@@ -488,7 +488,7 @@ const Technologies = () => {
             {Object.entries(groupTechLogos).map(([groupName, techs], groupIndex) => {
               const details = groupDetails[groupName] || {
                 description: "Practical tools for reliable product delivery.",
-                color: "#5044E5",
+                color: "#C8102E",
               };
 
               return (
@@ -498,9 +498,9 @@ const Technologies = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.06 * groupIndex }}
                   viewport={{ once: true, amount: 0.15 }}
-                  className="group relative overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 shadow-sm shadow-gray-100 dark:shadow-white/[0.03] transition-all duration-300 hover:-translate-y-1 hover:border-[#5044E5]/30 hover:shadow-xl hover:shadow-[#5044E5]/10 dark:hover:shadow-white/5 sm:p-6"
+                  className="group relative overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 shadow-sm shadow-gray-100 dark:shadow-white/[0.03] transition-all duration-300 hover:-translate-y-1 hover:border-[#C8102E]/30 hover:shadow-xl hover:shadow-[#C8102E]/10 dark:hover:shadow-white/5 sm:p-6"
                 >
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#147AFF] via-[#5044E5] to-[#4d8cea] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#147AFF] via-[#800020] to-[#C8102E] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   
                   <div className="flex items-start gap-4">
                     <span
@@ -545,7 +545,7 @@ const Technologies = () => {
         <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-950 p-6 shadow-2xl shadow-gray-900/20 dark:shadow-black/30 sm:p-10 lg:p-14">
           <div className="absolute inset-0 bg-grid opacity-40 dark:opacity-20" />
           <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[#147AFF]/20 blur-3xl" />
-          <div className="absolute -bottom-28 -left-20 h-72 w-72 rounded-full bg-[#5044E5]/20 blur-3xl" />
+          <div className="absolute -bottom-28 -left-20 h-72 w-72 rounded-full bg-[#C8102E]/20 blur-3xl" />
 
           <div className="relative grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
             <motion.div
@@ -590,7 +590,7 @@ const Technologies = () => {
                   viewport={{ once: true }}
                   className="rounded-2xl border border-white/10 bg-white/[0.06] p-5 backdrop-blur transition-colors hover:border-white/20 hover:bg-white/[0.09]"
                 >
-                  <span className="flex size-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#147AFF]/20 to-[#5044E5]/20 text-[#60A5FA]">
+                  <span className="flex size-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#147AFF]/20 to-[#C8102E]/20 text-[#60A5FA]">
                     <Icon id={principle.icon} className="w-5 h-5" />
                   </span>
                   <h3 className="mt-4 text-sm font-bold text-white">{principle.title}</h3>

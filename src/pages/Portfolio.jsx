@@ -69,10 +69,10 @@ const ProductCard = ({ product, index }) => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: (index % 3) * 0.12 }}
     viewport={{ once: true }}
-    className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#5044E5]/15"
+    className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#C8102E]/15"
   >
     <div className="relative h-52 sm:h-56 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/15 via-transparent to-[#5044E5]/15 opacity-70" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#147AFF]/15 via-transparent to-[#C8102E]/15 opacity-70" />
       <img
         src={product.image}
         alt={product.title}
@@ -80,8 +80,8 @@ const ProductCard = ({ product, index }) => (
         decoding="async"
         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
-      <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-white/90 dark:bg-gray-900/90 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#5044E5] dark:text-[#4d8cea] shadow backdrop-blur">
-        <span className="size-1.5 rounded-full bg-gradient-to-br from-[#147AFF] to-[#5044E5]" />
+      <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-white/90 dark:bg-gray-900/90 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#C8102E] dark:text-[#4d8cea] shadow backdrop-blur">
+        <span className="size-1.5 rounded-full bg-gradient-to-br from-[#800020] to-[#C8102E]" />
         {product.category}
       </span>
     </div>
@@ -126,7 +126,7 @@ const Portfolio = () => {
         title={
           <>
             Products We{" "}
-            <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
               Build & Offer
             </span>
           </>
