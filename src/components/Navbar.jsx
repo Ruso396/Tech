@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Logo from "./Logo";
-import ThemeToggleBtn from "./ThemeToggleBtn";
 import MobileMenu from "./MobileMenu";
 import Icon from "../assets/icons";
 import { navLinks, CTAs } from "../data/content";
 
-const Navbar = ({ theme, setTheme }) => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const linkClass = ({ isActive }) =>
@@ -97,10 +96,7 @@ const Navbar = ({ theme, setTheme }) => {
         {/* =====================================================
             RIGHT CONTROLS
         ===================================================== */}
-        <div className="flex items-center justify-end gap-2 sm:gap-4 shrink-0">
-          {/* Theme Toggle */}
-          <ThemeToggleBtn theme={theme} setTheme={setTheme} />
-
+        <div className="flex items-center justify-end shrink-0">
           {/* Desktop CTA */}
           <Link
             to="/contact"
@@ -109,7 +105,7 @@ const Navbar = ({ theme, setTheme }) => {
               xl:flex
               items-center
               gap-2
-              bg-primary
+              bg-[#C8102E]
               text-white
               text-sm
               px-6
@@ -117,6 +113,7 @@ const Navbar = ({ theme, setTheme }) => {
               rounded-full
               hover:scale-105
               transition-transform
+              hover:bg-[#A20D26]
               whitespace-nowrap
             "
           >

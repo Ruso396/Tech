@@ -151,7 +151,7 @@ const FounderSection = () => (
 
         <Link
           to="/contact"
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary text-white text-sm px-7 py-3.5 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 transition-all"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#C8102E] text-white text-sm px-7 py-3.5 hover:bg-[#A20D26] hover:scale-105 hover:shadow-lg hover:shadow-[#C8102E]/30 transition-all"
         >
           Talk to the Founder
           <Icon id="arrow" className="w-4 h-4" />
