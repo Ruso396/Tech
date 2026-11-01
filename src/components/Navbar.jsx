@@ -37,13 +37,15 @@ const Navbar = ({ theme, setTheme }) => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="
           w-full
-          flex
-          justify-between
+          grid
+          grid-cols-[1fr_auto]
           items-center
+          lg:grid-cols-[240px_minmax(0,1fr)_auto]
           px-4
           sm:px-12
-          lg:px-24
-          xl:px-40
+          lg:px-6
+          xl:px-16
+          2xl:px-40
           py-4
           sticky
           top-0
@@ -71,10 +73,10 @@ const Navbar = ({ theme, setTheme }) => {
           className="
             hidden
             lg:flex
-            flex-1
             items-center
             justify-center
-            gap-5
+            justify-self-center
+            gap-3
             xl:gap-6
             2xl:gap-8
             min-w-0
