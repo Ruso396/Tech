@@ -15,6 +15,8 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
       <img
         src={theme === 'dark' ? sunIcon : moonIcon}
         alt=""
+        width={24}
+        height={24}
         loading="eager"
         decoding="async"
       />

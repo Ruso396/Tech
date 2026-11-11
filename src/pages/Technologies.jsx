@@ -541,68 +541,7 @@ const Technologies = () => {
         </div>
       </section>
 
-      <section className={`${container} pb-16 sm:pb-24`}>
-        <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-950 p-6 shadow-2xl shadow-gray-900/20 dark:shadow-black/30 sm:p-10 lg:p-14">
-          <div className="absolute inset-0 bg-grid opacity-40 dark:opacity-20" />
-          <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[#147AFF]/20 blur-3xl" />
-          <div className="absolute -bottom-28 -left-20 h-72 w-72 rounded-full bg-[#C8102E]/20 blur-3xl" />
-
-          <div className="relative grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
-            <motion.div
-              initial={{ opacity: 0, x: -24 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-white/80">
-                Engineering principles
-              </span>
-              <h2 className="mt-5 text-3xl sm:text-4xl xl:text-5xl font-medium leading-tight tracking-tight text-white">
-                Built to perform today.{" "}
-                <span className="bg-gradient-to-r from-[#60A5FA] to-[#8B5CF6] bg-clip-text text-transparent">
-                  Ready to scale tomorrow.
-                </span>
-              </h2>
-              <p className="mt-5 max-w-lg text-sm sm:text-base leading-relaxed text-white/70">
-                Technology is only valuable when it supports the business. We choose tools that make
-                products easier to use, safer to operate, and simpler to improve.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-2.5">
-                {["Performance", "Security", "Maintainability", "Scalability"].map((item) => (
-                  <span
-                    key={item}
-                    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-2 text-xs font-semibold text-white/85"
-                  >
-                    <span className="size-1.5 rounded-full bg-[#60A5FA]" />
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              {principles.map((principle, index) => (
-                <motion.div
-                  key={principle.title}
-                  initial={{ opacity: 0, y: 18 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.45, delay: 0.08 * index }}
-                  viewport={{ once: true }}
-                  className="rounded-2xl border border-white/10 bg-white/[0.06] p-5 backdrop-blur transition-colors hover:border-white/20 hover:bg-white/[0.09]"
-                >
-                  <span className="flex size-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#147AFF]/20 to-[#C8102E]/20 text-[#60A5FA]">
-                    <Icon id={principle.icon} className="w-5 h-5" />
-                  </span>
-                  <h3 className="mt-4 text-sm font-bold text-white">{principle.title}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-white/65">
-                    {principle.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       <CTASection
         eyebrow="Have a technical challenge?"

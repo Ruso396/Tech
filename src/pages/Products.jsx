@@ -57,6 +57,8 @@ const FeaturedProduct = ({ product }) => (
       <img
         src={getProductImage(product)}
         alt={`${product.name} product preview`}
+        width={1400}
+        height={900}
         loading="eager"
         decoding="async"
         className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
@@ -135,6 +137,8 @@ const ProductShowcaseCard = ({ product, index }) => (
       <img
         src={getProductImage(product)}
         alt={`${product.name} product preview`}
+        width={1400}
+        height={900}
         loading="lazy"
         decoding="async"
         className="relative w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"

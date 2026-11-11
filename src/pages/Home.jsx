@@ -73,22 +73,20 @@ const Hero = () => (
       </motion.div>
 
       {/* Large product shot */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 1.6 }}
-        className="relative w-full"
-      >
+      <div className="relative w-full">
         <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-3xl border border-gray-200/70 dark:border-gray-800 shadow-2xl shadow-[#C8102E]/15">
           <img
-            src="https://agencyai-01.netlify.app/assets/hero_img-ySDs5NA2.png"
+            src="https://agencyai-01.netlify.app/.netlify/images?url=%2Fassets%2Fhero_img-ySDs5NA2.png&amp;w=1200&amp;q=75&amp;fm=webp"
             alt="RUHA Tech digital solutions hero banner"
+            width={1200}
+            height={660}
             loading="eager"
             decoding="async"
+            fetchPriority="high"
             className="w-full relative z-10"
           />
         </div>
-      </motion.div>
+      </div>
     </div>
   </section>
 );
@@ -110,8 +108,10 @@ const FounderSection = () => (
         <div className="absolute -top-8 -right-8 w-56 h-56 rounded-full bg-gradient-to-br from-[#147AFF]/25 to-[#C8102E]/25 blur-3xl" />
         <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#C8102E]/15 backdrop-blur">
           <img
-            src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1790058917/5ea034aa4cd1a61e2a55688c18d7e2b6313b73d6d4bc746a015afc60077f9dee_nlehkg.png"
+            src="https://res.cloudinary.com/dvrihrxrh/image/upload/f_auto,q_auto,w_800/v1790058917/5ea034aa4cd1a61e2a55688c18d7e2b6313b73d6d4bc746a015afc60077f9dee_nlehkg.png"
             alt="Kalam Ruso K — Founder & CEO of RUHA Tech"
+            width={800}
+            height={770}
             loading="lazy"
             decoding="async"
             className="w-full h-auto rounded-[calc(2rem-0.5rem)]"
@@ -178,8 +178,10 @@ const HeadOfMarketingSection = () => (
         <div className="absolute -top-6 -right-6 w-36 h-36 rounded-full bg-gradient-to-br from-[#C8102E]/25 to-[#4d8cea]/25 blur-3xl sm:-top-8 sm:-right-8 sm:w-56 sm:h-56" />
         <div className="relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 p-2 shadow-2xl shadow-[#C8102E]/15 backdrop-blur">
           <img
-            src="https://res.cloudinary.com/dvrihrxrh/image/upload/v1789728905/ChatGPT_Image_Sep_18_2026_04_24_08_PM_fnftdy.png"
+            src="https://res.cloudinary.com/dvrihrxrh/image/upload/f_auto,q_auto,w_700/v1789728905/ChatGPT_Image_Sep_18_2026_04_24_08_PM_fnftdy.png"
             alt="Arul Sundar — Head of Marketing at RUHA Tech"
+            width={700}
+            height={1119}
             loading="lazy"
             decoding="async"
             className="w-full h-auto rounded-[calc(2rem-0.5rem)]"

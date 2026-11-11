@@ -21,6 +21,8 @@ const ProductCard = ({ product, index = 0, image, compact = false }) => {
           <img
             src={productImage}
             alt={`${product.name} product preview`}
+            width={1000}
+            height={700}
             loading="lazy"
             decoding="async"
             onError={(e) => {
