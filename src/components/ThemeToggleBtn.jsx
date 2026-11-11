@@ -12,7 +12,12 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
       aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
       title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
     >
-      <img src={theme === 'dark' ? sunIcon : moonIcon} alt="" />
+      <img
+        src={theme === 'dark' ? sunIcon : moonIcon}
+        alt=""
+        loading="eager"
+        decoding="async"
+      />
     </button>
   )
 }

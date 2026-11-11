@@ -7,6 +7,8 @@ const Logo = () => (
     <img
       src={logo}
       alt="RUHA Tech logo"
+      loading="eager"
+      decoding="async"
       className="h-12 w-52 sm:h-14 sm:w-60 object-contain object-left"
     />
   </Link>

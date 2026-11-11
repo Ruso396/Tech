@@ -103,7 +103,7 @@ const Contact = () => {
             })}
 
             <div className="rounded-2xl bg-gradient-to-br from-[#147AFF] via-[#800020] to-[#C8102E] p-6 text-white shadow-xl shadow-[#C8102E]/25">
-              <h3 className="font-bold">Prefer to start simple?</h3>
+              <h2 className="font-bold">Prefer to start simple?</h2>
               <p className="text-sm text-white/85 mt-1.5">
                 Send us one line about your idea and we'll reply with a few quick questions.
               </p>

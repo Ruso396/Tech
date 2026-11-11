@@ -34,11 +34,11 @@ const Hero = () => (
         transition={{ duration: 0.6, delay: 0.8 }}
         className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl tracking-tight"
       >
-        We Build Digital Solutions That Move{" "}
+        Full-Stack Development & Digital Solutions for{" "}
         <span className="bg-gradient-to-r from-[#800020] to-[#C8102E] bg-clip-text text-transparent">
           Your Business
         </span>{" "}
-        Forward.
+        — Built by RUHA Tech.
       </motion.h1>
 
       <motion.p

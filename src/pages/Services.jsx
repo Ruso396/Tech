@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../components/PageHeader";
 import ServiceCard from "../components/ServiceCard";
 import CTASection from "../components/CTASection";
+import SectionHeading from "../components/SectionHeading";
 import usePageMeta from "../hooks/usePageMeta";
 import { allServices } from "../data/content";
 
@@ -28,6 +29,12 @@ const Services = () => {
       />
 
       <section className="px-4 sm:px-12 lg:px-24 xl:px-40 py-12 sm:py-16">
+        <SectionHeading
+          eyebrow="Full-Stack Development & Digital Solutions"
+          title="Web Development and Technology Services"
+          desc="Explore end-to-end development and digital services built around your business goals."
+          className="mb-10"
+        />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
           {allServices.map((s, i) => (
             <ServiceCard key={s.title} service={s} index={i} />

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import PageHeader from "../components/PageHeader";
 import CTASection from "../components/CTASection";
+import SectionHeading from "../components/SectionHeading";
 import usePageMeta from "../hooks/usePageMeta";
 import Icon from "../assets/icons";
 
@@ -135,6 +136,12 @@ const Portfolio = () => {
       />
 
       <section className="px-4 sm:px-12 lg:px-24 xl:px-40 py-12 sm:py-16">
+        <SectionHeading
+          eyebrow="Selected Work"
+          title="Digital Products Built for Real Businesses"
+          desc="Explore software platforms designed to simplify everyday business operations."
+          className="mb-10"
+        />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {products.map((p, i) => (
             <ProductCard key={p.title} product={p} index={i} />

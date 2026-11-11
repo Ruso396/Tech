@@ -50,9 +50,9 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-2xl sm:text-3xl font-medium text-gray-900 dark:text-white">
+            <h2 className="text-2xl sm:text-3xl font-medium text-gray-900 dark:text-white">
               Technology that solves real business problems.
-            </h3>
+            </h2>
             <p className="text-sm sm:text-base text-gray-500 dark:text-white/75 leading-relaxed">
               We work with startups, small businesses, growing companies, and organizations that
               need technology to solve real operational problems.
@@ -90,7 +90,7 @@ const About = () => {
               <span className="size-11 rounded-xl bg-gradient-to-br from-[#800020] to-[#C8102E] text-white flex items-center justify-center mb-4">
                 <Icon id="target" className="w-6 h-6" />
               </span>
-              <h4 className="font-bold text-gray-900 dark:text-white">Our Mission</h4>
+              <h3 className="font-bold text-gray-900 dark:text-white">Our Mission</h3>
               <p className="text-sm text-gray-500 dark:text-white/70 mt-2">
                 To make powerful technology accessible, practical, and useful for every business.
               </p>
@@ -99,7 +99,7 @@ const About = () => {
               <span className="size-11 rounded-xl bg-gradient-to-br from-[#800020] to-[#C8102E] text-white flex items-center justify-center mb-4">
                 <Icon id="eye" className="w-6 h-6" />
               </span>
-              <h4 className="font-bold text-gray-900 dark:text-white">Our Vision</h4>
+              <h3 className="font-bold text-gray-900 dark:text-white">Our Vision</h3>
               <p className="text-sm text-gray-500 dark:text-white/70 mt-2">
                 To build digital products that become an essential part of how businesses operate and grow.
               </p>
@@ -149,7 +149,7 @@ const About = () => {
               <span className="size-11 rounded-xl bg-gradient-to-br from-[#147AFF]/15 to-[#C8102E]/15 text-primary flex items-center justify-center mb-4">
                 <Icon id={item.icon} className="w-6 h-6" />
               </span>
-              <h4 className="font-bold text-gray-900 dark:text-white">{item.title}</h4>
+              <h3 className="font-bold text-gray-900 dark:text-white">{item.title}</h3>
               <p className="text-sm text-gray-500 dark:text-white/70 mt-2">{item.desc}</p>
             </motion.div>
           ))}

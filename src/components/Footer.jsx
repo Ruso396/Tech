@@ -26,7 +26,7 @@ const Footer = () => {
             <a
               href={socialLinks.linkedin}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="RUHA Tech on LinkedIn"
               className="size-9 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition-colors"
             >
@@ -35,7 +35,7 @@ const Footer = () => {
             <a
               href={socialLinks.github}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="RUHA Tech on GitHub"
               className="size-9 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition-colors"
             >
@@ -44,7 +44,7 @@ const Footer = () => {
             <a
               href={socialLinks.twitter}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="RUHA Tech on X (Twitter)"
               className="size-9 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition-colors"
             >
@@ -63,7 +63,7 @@ const Footer = () => {
         {/* Link Columns */}
         {footerColumns.map((col, idx) => (
           <div key={idx}>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">{col.heading}</h4>
+            <h2 className="font-semibold text-gray-900 dark:text-white mb-4">{col.heading}</h2>
             <ul className="space-y-2.5">
               {col.links.map((link) => (
                 <li key={link.label}>

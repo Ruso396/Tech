@@ -69,6 +69,7 @@ const Navbar = () => {
             DESKTOP NAVIGATION
         ===================================================== */}
         <nav
+          aria-label="Primary navigation"
           className="
             hidden
             lg:flex

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Icon from "../assets/icons";
 import PageHeader from "../components/PageHeader";
+import SectionHeading from "../components/SectionHeading";
 import SplitSection from "../components/SplitSection";
 import CTASection from "../components/CTASection";
 import usePageMeta from "../hooks/usePageMeta";
@@ -132,6 +133,12 @@ const DigitalMarketing = () => {
       />
 
       <section className="px-4 sm:px-12 lg:px-24 xl:px-40 py-12 sm:py-16">
+        <SectionHeading
+          eyebrow="Digital Marketing Services"
+          title="Grow Your Online Presence"
+          desc="Build visibility and reach the right audience with search, content, social, and analytics."
+          className="mb-10"
+        />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
           {marketingServices.map((s, i) => (
             <MarketingCard key={s.title} service={s} index={i} />
@@ -175,7 +182,7 @@ const DigitalMarketing = () => {
               <Icon id="rocket" className="w-6 h-6" />
             </span>
             <div>
-              <h3 className="font-bold text-gray-900 dark:text-white">Marketing that supports great technology.</h3>
+              <h2 className="font-bold text-gray-900 dark:text-white">Marketing that supports great technology.</h2>
               <p className="text-sm text-gray-500 dark:text-white/70 mt-1.5 max-w-2xl">
                 We see digital marketing as a support service that runs alongside our technology
                 solutions — helping the products we build reach the people who need them.

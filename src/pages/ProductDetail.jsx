@@ -15,16 +15,18 @@ const ProductDetail = () => {
   usePageMeta(
     product
       ? `${product.name} | RUHA Tech`
-      : "Product | RUHA Tech",
+      : "Product Not Found | RUHA Tech",
     product
       ? `${product.tagline} ${product.description}`
-      : "Explore RUHA Tech products."
+      : "The requested product could not be found. Explore RUHA Tech products and digital solutions."
   );
 
   if (!product) {
     return (
       <div className="px-4 sm:px-12 lg:px-24 xl:px-40 py-32 text-center">
-        <p className="text-sm text-gray-500 dark:text-white/70 mb-4">Product not found.</p>
+        <h1 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+          Product not found
+        </h1>
         <Link
           to="/products"
           className="inline-flex items-center gap-2 text-sm font-semibold text-primary"

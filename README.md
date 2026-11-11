@@ -73,3 +73,6 @@ src/
 
 - Company details, contact placeholders, social links, nav links, services, products, technologies, projects, and digital marketing content live in `src/data/content.js`.
 - Replace placeholder contact details and social URLs there before going live.
+- Replace the `google-site-verification` placeholder in `index.html` with the token from Google Search Console.
+- `public/sitemap.xml` and `public/robots.txt` use `https://ruhatech.vercel.app` as the site origin; update their URLs and the canonical/social/schema URLs in `index.html` and `src/hooks/usePageMeta.js` when deploying to a different domain.
+- To enable GA4, set `VITE_GA_MEASUREMENT_ID` to your measurement ID (for example, `G-ABC1234567`). Analytics is not loaded until a valid ID is configured.

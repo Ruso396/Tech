@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -27,6 +28,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <GoogleAnalytics />
       <div className="relative bg-white dark:bg-black transition-colors min-h-screen flex flex-col overflow-x-clip">
         <Toaster />
         <Navbar theme={theme} setTheme={setTheme} />
